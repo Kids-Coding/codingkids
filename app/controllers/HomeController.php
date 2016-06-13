@@ -62,4 +62,38 @@ class HomeController extends BaseController {
 		return View::make('lessons');
 	}
 
+	public function signupForm()
+	{
+		return View::make('signup');
+	}
+
+	public function validate()
+	{
+		$validator = Validator::make(Input::all(), Post::$rules);
+
+		if ($validator->fails()) {
+			return Redirect::back()->withInput()->withErrors($validator);
+		} else {
+			$user = new User();
+			$user->email = Input::get('email');
+			$user->username = Input::get('username');
+			$user->password = Input::get('password');
+			$user->save();
+		}
+	}
+	
+	public function doSignup()
+	{
+		$email = Input::get('email');
+		$password = Input::get('password');
+		$username = Input::get('username');
+
+		function validate();
+
+		Session::flash('successMessage', 'User created');
+		return Redirect::action('HomeController@login');
+
+	}
+
+
 }

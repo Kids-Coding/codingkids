@@ -24,7 +24,16 @@ Route::post('/login', 'HomeController@doLogin');
 //logout
 Route::get('/logout', 'HomeController@doLogout');
 
+//lessons
 Route::get('/lessons', 'HomeController@lessons');
+
+//signup
+Route::get('signup', 'HomeController@signupForm');
+Route::post('signup', 'HomeController@doSignup');
+
+//lessons
+Route::resource('lessons', 'LessonsController');
+
 
 //test thing
 Route::get('orm-test', function ()
