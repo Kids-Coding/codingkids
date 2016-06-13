@@ -1,10 +1,9 @@
-<footer class="footer">
+<footer class="footer navbar-fixed-bottom">
 	<div class="row footerinfo">
 		<div class="col-md-6 followus">
 			<span>Coding Kids© </span>
 			Follow Us On: 
 			<span class="fa fa-twitter"></span>
-			<span class="fa fa-linkedin"></span>
 			<span class="fa fa-facebook"></span>
 			<span class="fa fa-pinterest"></span>
 		</div>
