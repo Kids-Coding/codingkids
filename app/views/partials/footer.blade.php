@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer navbar-fixed-bottom">
 	<div class="row footerinfo">
 		<div class="col-md-6 followus">
 			<span>Coding Kids© </span>

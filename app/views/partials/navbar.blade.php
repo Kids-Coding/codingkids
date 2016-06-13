@@ -5,5 +5,9 @@
         <img class="navimg" src="../img/coding-kids.png">
       </a>
     </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{{ action('HomeController@loginForm') }}}">Log In</a></li>
+        <li><a href="{{{ action('HomeController@signupForm') }}}">Sign Up</a></li>
+    </ul>
   </div>
 </nav>
