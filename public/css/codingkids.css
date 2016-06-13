@@ -1,0 +1,69 @@
+.navimg{
+	width: 300px;
+	height: auto;
+}
+
+.navbar{
+	background-color: white;
+	height: 70px;
+	border: none;
+	border-radius: 0px;
+}
+
+.form{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 15px;
+
+}
+
+.form-btn{
+	margin-left: 40px;
+}
+
+.video{
+	width: 100%;
+	height: 450px;
+	background-color: blue;
+}
+
+.signupimg{
+	width: 180px;
+	padding-top: 40px;
+	margin-left: 150px;
+}
+
+.signinimg{
+	width: 180px;
+	padding-top: 40px;
+	margin-left: 50px;
+}
+
+.mission-stmt{
+	padding-top: 30px;
+	padding-left: 20px;
+	margin-right: 60px;
+	font-size: 20px;
+}
+
+.copyright-image{
+	width: 20px;
+}
+
+.footer{
+	padding-top: 50px;
+}
+
+.footerinfo{
+	background-color: #69DB0E;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.subscribe{
+	padding-right: 15px;
+}
+
+.FollowUs{
+	padding-left: 50px;
+}
