@@ -4,10 +4,10 @@
 
 	<div class="row signup">
         <div class="col-md-6">
-            <img class="gears" src="../img/gears.png">
+            <img class="gears" src="../img/kidoncomp.png">
         </div>
         <div class="col-md-6">
-            <div class="signuptext signup-form">
+            <div class="signup-form">
                 <p class="sign-up-text">Sign Up</p>
                 <p> It's always free and always will be.</p>
             </div>

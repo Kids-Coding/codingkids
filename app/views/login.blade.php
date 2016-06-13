@@ -6,12 +6,12 @@
 <form class="form-horizontal login-form">
   	<div class="form-group">
     	<div class="col-md-6 col-md-offset-3">
-      		<input type="email" class="form-control input-lg" id="inputEmail3" placeholder="Email">
+      		<input type="username" class="form-control input-lg" id="username" placeholder="Username">
     	</div>
   	</div>
   	<div class="form-group">
     	<div class="col-md-6 col-md-offset-3">
-      		<input type="password" class="form-control input-lg" id="inputPassword3" placeholder="Password">
+      		<input type="password" class="form-control input-lg" id="password" placeholder="Password">
     	</div>
   	</div>
   	<div class="form-group">
