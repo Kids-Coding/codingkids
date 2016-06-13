@@ -26,3 +26,9 @@ Route::get('/logout', 'HomeController@doLogout');
 
 Route::get('/lessons', 'HomeController@lessons');
 
+//test thing
+Route::get('orm-test', function ()
+{
+    // test code here
+});
+
