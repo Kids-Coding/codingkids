@@ -31,4 +31,14 @@ Route::get('/lessons', 'HomeController@lessons');
 Route::get('/signup', 'HomeController@signupForm');
 Route::post('/signup', 'HomeController@doSignup');
 
+//lessons
+Route::resource('lessons', 'HomeController@lessons');
+
 Route::get('/about', 'HomeController@about');
+
+
+//test thing
+Route::get('orm-test', function ()
+{
+    // test code here
+});
