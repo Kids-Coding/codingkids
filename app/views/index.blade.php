@@ -6,7 +6,7 @@
 
 <div class="row">
 	<div class="col-md-6">
-		<img class="signupimg" src="../img/signup.png">
+		<a href="/signup"><img class="signupimg" src="../img/signup.png"></a>
 		<img class="signinimg" src="../img/signin.png">
 	</div>
 
