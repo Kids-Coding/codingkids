@@ -113,3 +113,16 @@ body {
 	margin-right: 50px;
 	font-size: 15px;
 }
+
+.login-form{
+	text-align: center;
+}
+
+.login{
+	padding-top: 90px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-family: 'Lobster';
+	font-size: 80px;
+	color:  #9013fe;
+}

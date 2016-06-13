@@ -28,11 +28,13 @@ Route::get('/logout', 'HomeController@doLogout');
 Route::get('/lessons', 'HomeController@lessons');
 
 //signup
-Route::get('signup', 'HomeController@signupForm');
-Route::post('signup', 'HomeController@doSignup');
+Route::get('/signup', 'HomeController@signupForm');
+Route::post('/signup', 'HomeController@doSignup');
 
 //lessons
-Route::resource('lessons', 'LessonsController');
+Route::resource('lessons', 'HomeController@lessons');
+
+Route::get('/about', 'HomeController@about');
 
 
 //test thing
