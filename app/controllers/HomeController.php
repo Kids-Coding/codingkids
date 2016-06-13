@@ -67,31 +67,42 @@ class HomeController extends BaseController {
 		return View::make('signup');
 	}
 
-	public function validate()
-	{
-		$validator = Validator::make(Input::all(), Post::$rules);
+	// not sure if ill need this yet...might be used in store
+	// public function validate()
+	// {
+	// 	$validator = Validator::make(Input::all(), Post::$rules);
 
-		if ($validator->fails()) {
-			return Redirect::back()->withInput()->withErrors($validator);
-		} else {
-			$user = new User();
-			$user->email = Input::get('email');
-			$user->username = Input::get('username');
-			$user->password = Input::get('password');
-			$user->save();
-		}
-	}
+	// 	if ($validator->fails()) {
+	// 		return Redirect::back()->withInput()->withErrors($validator);
+	// 	} else {
+	// 		$user = new User();
+	// 		$user->email = Input::get('email');
+	// 		$user->username = Input::get('username');
+	// 		$user->password = Input::get('password');
+	// 		$user->save();
+	// 	}
+	// }
 
 	public function doSignup()
 	{
-		$email = Input::get('email');
-		$password = Input::get('password');
-		$username = Input::get('username');
 
-		function validate(){};
+		$data = Input::all();
+		$rules = array(
+			'email' => 'required|email',
+			'username' => 'required',
+			'password' => 'required|min:3|confirmed',
+			'password_confirmation' => 'required|min:3'
+			);
 
-		Session::flash('successMessage', 'User created');
-		return Redirect::action('HomeController@login');
+		$validator = Validator::make($data, $rules);
+
+		if ($validator->passes())
+		{
+			return 'User created';
+			Session::flash('successMessage', 'User created');
+		}
+
+		return Redirect::to('/')->withErrors($validator);
 
 	}
 
