@@ -11,7 +11,18 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// actual index page
+// Route::get('/', 'HomeController@showIndex');
+
+//temp landing page
+Route::get('/', 'HomeController@showTemp');
+
+//login
+Route::get('/login', 'HomeController@loginForm');
+Route::post('/login', 'HomeController@doLogin');
+
+//logout
+Route::get('/logout', 'HomeController@doLogout');
+
+Route::get('/lessons', 'HomeController@lessons');
+
