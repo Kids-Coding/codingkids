@@ -1,5 +1,5 @@
 .navimg{
-	width: 300px;
+	width: 350px;
 	height: auto;
 }
 
@@ -29,29 +29,42 @@
 
 .signupimg{
 	width: 180px;
-	padding-top: 40px;
+	padding-top: 30px;
 	margin-left: 150px;
+	padding-bottom: 30px;
 }
 
 .signinimg{
 	width: 180px;
-	padding-top: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	margin-left: 50px;
 }
 
-.mission-stmt{
-	padding-top: 30px;
-	padding-left: 20px;
-	margin-right: 60px;
-	font-size: 20px;
+.line2mission{
+	margin-left: 40px;
 }
+
+.mission-col{
+	background-color: #9013FE;
+	font-size: 30px;
+	padding-left: 50px;
+	padding-top: 50px;
+	height: 240px;
+	color: white;
+	font-family: 'Roboto Mono';
+}
+
 
 .copyright-image{
 	width: 20px;
 }
 
 .footer{
-	padding-top: 50px;
+	background-color: #69DB0E;
+	padding-top: 10px;
+	font-family: 'Amatic SC';
+	font-size: 25px; 
 }
 
 .footerinfo{
@@ -64,6 +77,6 @@
 	padding-right: 15px;
 }
 
-.FollowUs{
+.followus{
 	padding-left: 50px;
 }
