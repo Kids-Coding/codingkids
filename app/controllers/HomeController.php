@@ -81,14 +81,14 @@ class HomeController extends BaseController {
 			$user->save();
 		}
 	}
-	
+
 	public function doSignup()
 	{
 		$email = Input::get('email');
 		$password = Input::get('password');
 		$username = Input::get('username');
 
-		function validate();
+		function validate(){};
 
 		Session::flash('successMessage', 'User created');
 		return Redirect::action('HomeController@login');
