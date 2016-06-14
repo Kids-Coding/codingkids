@@ -179,3 +179,17 @@ h3{
 	width: 200px;
 	height: 75px;
 }
+
+.joke{
+	text-align: center;
+	margin-top: 150px;
+}
+
+.joke-quest{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.joke-answer{
+	font-size: 15px;
+}

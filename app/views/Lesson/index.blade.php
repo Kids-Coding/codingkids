@@ -42,6 +42,13 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="col-md-12 joke">
+        <p class="joke-quest">Why did the fly never land on the computer?</p>
+        <p class="joke-answer">He was afriad of the world wide web.</p>
+    </div>
+</div>
+
 
 
 @stop
