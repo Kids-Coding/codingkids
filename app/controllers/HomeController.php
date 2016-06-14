@@ -14,6 +14,7 @@ class HomeController extends BaseController {
 	|	Route::get('/', 'HomeController@showWelcome');
 	|
 	*/
+
 	public function showTemp()
 	{
 		return View::make('temp');
@@ -67,7 +68,12 @@ class HomeController extends BaseController {
 
     public function account()
     {
-        return View::make('account');
+    	if(Auth::check()){
+        	return View::make('account');
+    	} else {
+    		Session::flash('errorMessage', 'You must be logged in to view this page.');
+    		return Redirect::intended('/login');
+    	}
     }
 
 	public function signupForm()
