@@ -7,8 +7,8 @@
 			<span class="fa fa-facebook"></span>
 			<span class="fa fa-pinterest"></span>
 		</div>
-		<div class="col-md-6">
-			<form class="form-inline">
+		<div class="col-md-6 col-xs-12">
+			<form class="form-inline footer-form">
 					<span class="subscribe">Subscribe To Our Emails</span>
 				 <div class="form-group">
 						<input type="text" class="form-control" id="exampleInputName2" placeholder="name">

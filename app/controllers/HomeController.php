@@ -107,4 +107,13 @@ class HomeController extends BaseController {
   }
 
 
+  public function destroy($id)
+	{
+		$user = User::find($id);
+		$user->delete();
+		Session::flash('successMessage', 'Your account was successfully deleted.');
+		return Redirect::intended('/');
+	}
+
+
 }
