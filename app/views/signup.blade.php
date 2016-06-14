@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<div class="row signup">
+    <div class="row signup">
         <div class="col-md-6">
             <img class="gears" src="../img/kidoncomp.png">
         </div>
@@ -11,32 +11,32 @@
                 <p class="sign-up-text">Sign Up</p>
                 <p> It's always free and always will be.</p>
             </div>
-            <form class="form" method="POST" action="/signup">
+                {{ Form::open(array('action' => 'HomeController@doSignup', 'class' => 'form')) }}
                 <div class="row">
                     <div class="form">
-                        <input name="parentName" type="text" placeholder="Parent Name" class="form-control" id="parentName">
+                        {{ Form::text('parentName', null, ['class' => 'form-control' , 'placeholder' => 'Parent Name' ]) }}
                     </div>
                     <div class="form">
-                        <input name="studentName" type="text" placeholder="Student Name" class="form-control" id="studentName">
+                        {{ Form::text('childName', null, ['class' => 'form-control' , 'placeholder' => 'Student Name' ]) }}
                     </div>
                     <div class="form">
-                        <input name="username" type="text" placeholder="Username" class="form-control" id="username">
+                        {{ Form::text('username', null, ['class' => 'form-control' , 'placeholder' => 'Username' ]) }}
                     </div>
                     <div class="form">
-                        <input name="email" type="text" placeholder="Email" class="form-control" id="email">
+                        {{ Form::text('email', null, ['class' => 'form-control' , 'placeholder' => 'Email' ]) }}
                     </div>
                     <div class="form">
-                        <input name="password" type="password" placeholder="Password" class="form-control" id="password">
+                        {{ Form::password('password', ['class' => 'form-control' , 'placeholder' => 'Password' ]) }}
                     </div>
                     <div class="form">
-                        <input name="confirm" type="password" placeholder="Confirm Password" class="form-control" id="confirm">
+                        {{ Form::password('password_confirmation', ['class' => 'form-control' , 'placeholder' => 'Confirm Password' ]) }}
                     </div>
                 </div>
                 <div>
-                    <input class="btn btn-info form-btn" type="submit" id="submit" value="SIGN UP!">
+                    {{ Form::submit('Sign Up!', ['class' => 'btn btn-info form-btn']); }}
                 </div>
-            </form>
+            {{ Form::close() }}
         </div>
-	</div>
+    </div>
 
 @stop

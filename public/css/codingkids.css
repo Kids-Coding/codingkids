@@ -127,3 +127,15 @@ body {
 	font-size: 80px;
 	color:  #9013fe;
 }
+
+.login-input{
+	margin-bottom: 20px;
+}
+
+.footer-coding-kids{
+	padding-right: 10px;
+}
+
+.alert-danger{
+	text-align: center;
+}

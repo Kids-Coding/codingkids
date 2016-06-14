@@ -21,6 +21,11 @@ class HomeController extends BaseController {
 
 	public function showIndex()
 	{
+		if(Auth::check())
+		{
+			Session::flash('errorMessage', 'Stop dickin\' around and work');
+			return Redirect::back();
+		}
 		return View::make('index');
 	}
 
@@ -31,14 +36,12 @@ class HomeController extends BaseController {
 
 	public function doLogin()
 	{
-		$email = Input::get('email');
-		$password = Input::get('password');
 		$username = Input::get('username');
-
-		if (Auth::attempt(array('email' => $email, 'password' => $password, 'username' => $username)))
+		$password = Input::get('password');
+		if (Auth::attempt(array('username' => $username, 'password' => $password)))
 		{
 			Session::flash('successMessage', 'Login successful');
-			return Redirect::intended('/');
+			return Redirect::intended('/lessons');
 		} else {
 			Session::flash('errorMessage', 'Login failed');
 			return Redirect::back()->withInput();
@@ -67,49 +70,30 @@ class HomeController extends BaseController {
 		return View::make('signup');
 	}
 
-	// not sure if ill need this yet...might be used in store
-	// public function validate()
-	// {
-	// 	$validator = Validator::make(Input::all(), Post::$rules);
-
-	// 	if ($validator->fails()) {
-	// 		return Redirect::back()->withInput()->withErrors($validator);
-	// 	} else {
-	// 		$user = new User();
-	// 		$user->email = Input::get('email');
-	// 		$user->username = Input::get('username');
-	// 		$user->password = Input::get('password');
-	// 		$user->save();
-	// 	}
-	// }
-
-	public function doSignup()
-	{
-
-		$data = Input::all();
-		$rules = array(
-			'email' => 'required|email',
-			'username' => 'required',
-			'password' => 'required|min:3|confirmed',
-			'password_confirmation' => 'required|min:3'
-			);
-
-		$validator = Validator::make($data, $rules);
-
-		if ($validator->passes())
-		{
-			return 'User created';
-			Session::flash('successMessage', 'User created');
-		}
-
-		return Redirect::to('/')->withErrors($validator);
-
-	}
-
-	public function about()
-	{
-		return View::make('about');
-	}
+	public function doSignUp()
+  {
+    // create the validator
+    $validator = Validator::make(Input::all(), User::$rules);
+    // attempt validation
+    if ($validator->fails()) {
+        // validation failed, redirect to the post create page with validation errors and old inputs\
+      Session::flash('errorMessage', 'Account not created.');
+      // Create log of all info to be passed
+     // $Log::info(Input::all()); --------    ------  ~$Log Not Defined~
+      return Redirect::back()->withInput()->withErrors($validator);
+    }
+    // validation succeeded, create and save the post
+    $user = new User();
+    $user->parentName = Input::get('parentName');
+    $user->childName = Input::get('childName');
+    $user->username = Input::get('username');
+    $user->email = Input::get('email');
+    $user->password = Hash::make(Input::get('password'));
+    $user->save();
+    Session::flash('successMessage', 'Welcome ' . ucwords($user->username));
+    return Redirect::intended('/lessons');
+    //return Redirect::action('HomeController@profile', $user->$id);
+  }
 
 
 }

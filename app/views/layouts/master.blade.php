@@ -16,6 +16,8 @@
 </head>
 <body>
     @include('partials.navbar')
+    @include('partials.alerts.error')
+    @include('partials.alerts.success')
     @yield('content')
     @include('partials.footer')
 
