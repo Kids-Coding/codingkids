@@ -1,0 +1,29 @@
+body {
+    background-color: #5abfc6;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    height: 350px;
+    width: 450px;
+    border: inset;
+    background-color: black;
+    color: #9efc7d;
+}
+
+.btn {
+    box-shadow: 1px 1px 2px #888888;
+    margin-top: 175px;
+    margin-left: 50px;
+    background-color: #ce95c8;
+    color: #fff07a;
+}
+
+#view{
+    height: 350px;
+    width: 450px;
+    border: inset;
+    background-color: white;
+}
+

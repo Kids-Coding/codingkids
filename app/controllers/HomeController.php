@@ -65,6 +65,11 @@ class HomeController extends BaseController {
 		return View::make('lessons');
 	}
 
+	public function lesson()
+	{
+		return View::make('lesson');
+	}
+
 	public function signupForm()
 	{
 		return View::make('signup');

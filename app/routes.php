@@ -33,6 +33,7 @@ Route::post('/signup', 'HomeController@doSignup');
 
 //lessons
 Route::resource('lessons', 'HomeController@lessons');
+Route::resource('lesson', 'HomeController@lesson');
 
 Route::get('/about', 'HomeController@about');
 
