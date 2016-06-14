@@ -2,23 +2,24 @@
 
 @section('content')
 
+
 <p class="login">Log In!</p>
-<form class="form-horizontal login-form">
+{{ Form::open(array('action' => 'HomeController@doLogin')) }}
   	<div class="form-group">
+    	<div class="col-md-6 col-md-offset-3 login-input">
+      		{{ Form::text('username', null, ['class' => 'form-control input-lg' , 'placeholder' => 'Username' ]) }}
+    	</div>
+  	</div>
+  	<div class="form-group">
+    	<div class="col-md-6 col-md-offset-3 login-input">
+      		{{ Form::password('password', ['class' => 'form-control input-lg' , 'placeholder' => 'Password' ]) }}
+    	</div>
+  	</div>
+  	<div class="form-group login-form">
     	<div class="col-md-6 col-md-offset-3">
-      		<input type="username" class="form-control input-lg" id="username" placeholder="Username">
+      		{{ Form::submit('Sign In', ['class' => 'btn btn-info btn-lg']); }}
     	</div>
   	</div>
-  	<div class="form-group">
-    	<div class="col-md-6 col-md-offset-3">
-      		<input type="password" class="form-control input-lg" id="password" placeholder="Password">
-    	</div>
-  	</div>
-  	<div class="form-group">
-    	<div class="col-sm-12">
-      		<button type="submit" class="btn btn-info btn-lg">Sign in</button>
-    	</div>
-  	</div>
-</form>
+{{ Form::close() }}
 
 @stop
