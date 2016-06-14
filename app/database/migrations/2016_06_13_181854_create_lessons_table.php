@@ -15,7 +15,7 @@ class CreateLessonsTable extends Migration {
 		Schema::create('lessons', function($table)
 		{
 			$table->increments('id');
-			$table->string('lessons');
+			$table->string('name');
 			$table->string('link');
 			$table->string('category');
 			$table->rememberToken();

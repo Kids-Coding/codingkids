@@ -5,8 +5,8 @@ class LessonsController extends BaseController {
     public function index()
         {
             if(Auth::check()){
-                $lesson = Lesson::all();
-                return View::make('lesson.index')->withLesson($lesson);
+                $lessons = Lesson::all();
+                return View::make('lesson.index')->with('lessons', $lessons);
             } else {
                 Session::flash('errorMessage', 'You must be logged in to view this page.');
                 return Redirect::action('HomeController@showIndex');
