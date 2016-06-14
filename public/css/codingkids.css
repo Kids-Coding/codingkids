@@ -151,8 +151,14 @@ h3{
 }
 
 @media (min-width: 0px) and (max-width: 1080px){
-    .footer { 
+    .footer-form { 
         display : none; 
         visibility : hidden; 
     }
+}
+
+.account-side{
+	padding-top: 80px;
+	font-size: 30px;
+	font-family: 'Amatic SC';
 }
