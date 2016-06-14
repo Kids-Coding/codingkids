@@ -1,5 +1,11 @@
-<?php
+@extends('layouts.lesson')
 
+@section('content')
+
+<<<<<<< HEAD
+    {{-- where the vid goes --}}
+    <img src="{{action('LessonsController@show', $lesson->link)}}" class="holder">
+=======
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +22,7 @@
 </head>
 <body>
     <a href="{{$lesson->link}}"><?php echo $lesson->link ?></a>
+>>>>>>> 5b6e7f3700a1b0d3266e56d9e6f5ded0ecd31626
         <div class="container">
             <div class="row">
                 <div class="col-sm-5">
@@ -33,16 +40,11 @@
             </div> <!-- end row -->
         </div> <!-- end container -->
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript">
-
-    function codingKids() {
-        var x = document.getElementById("editor").value;
-        document.getElementById("view").innerHTML = x;
-    }
-
+    @include('public.js.lessonMain')
 </script>
-</body>
-</html>
+@stop
+
+@section('scripts')
+@include('js.lessonMain')
+@stop
