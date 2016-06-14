@@ -21,6 +21,11 @@ class HomeController extends BaseController {
 
 	public function showIndex()
 	{
+		if(Auth::check())
+		{
+			Session::flash('errorMessage', 'Stop dickin\' around and work');
+			return Redirect::back();
+		}
 		return View::make('index');
 	}
 
@@ -36,7 +41,7 @@ class HomeController extends BaseController {
 		if (Auth::attempt(array('username' => $username, 'password' => $password)))
 		{
 			Session::flash('successMessage', 'Login successful');
-			return Redirect::intended('/');
+			return Redirect::intended('/lessons');
 		} else {
 			Session::flash('errorMessage', 'Login failed');
 			return Redirect::back()->withInput();
@@ -86,7 +91,7 @@ class HomeController extends BaseController {
     $user->password = Hash::make(Input::get('password'));
     $user->save();
     Session::flash('successMessage', 'Welcome ' . ucwords($user->username));
-    return Redirect::action('HomeController@showIndex');
+    return Redirect::intended('/lessons');
     //return Redirect::action('HomeController@profile', $user->$id);
   }
 
