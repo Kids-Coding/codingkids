@@ -8,31 +8,55 @@ class LessonTableSeeder extends Seeder {
         $lesson = new Lesson();
         $lesson->lessons = 'lesson1';
         $lesson->category = 'html';
-        $lesson->link = 'http://google.com';
+        $lesson->link = 'https://google.com';
         $lesson->save();
 
         $lesson = new Lesson();
         $lesson->lessons = 'lesson2';
         $lesson->category = 'html';
-        $lesson->link = 'http://yahoo.com';
+        $lesson->link = 'https://yahoo.com';
+        $lesson->save();
+
+        $lesson = new Lesson();
+        $lesson->lessons = 'lesson3';
+        $lesson->category = 'html';
+        $lesson->link = 'https://github.com';
+        $lesson->save();
+
+        $lesson = new Lesson();
+        $lesson->lessons = 'lesson1';
+        $lesson->category = 'css';
+        $lesson->link = 'https://reddit.com';
+        $lesson->save();
+
+        $lesson = new Lesson();
+        $lesson->lessons = 'lesson2';
+        $lesson->category = 'css';
+        $lesson->link = 'https://facebook.com';
         $lesson->save();
 
         $lesson = new Lesson();
         $lesson->lessons = 'lesson3';
         $lesson->category = 'css';
-        $lesson->link = 'http://reddit.com';
+        $lesson->link = 'https://nba.com';
+        $lesson->save();
+    
+        $lesson = new Lesson();
+        $lesson->lessons = 'lesson1';
+        $lesson->category = 'php';
+        $lesson->link = 'https://reddit.com';
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->lessons = 'lesson4';
-        $lesson->category = 'css';
-        $lesson->link = 'http://facebook.com';
+        $lesson->lessons = 'lesson2';
+        $lesson->category = 'php';
+        $lesson->link = 'https://facebook.com';
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->lessons = 'lesson5';
-        $lesson->category = 'css';
-        $lesson->link = 'http://nba.com';
+        $lesson->lessons = 'lesson3';
+        $lesson->category = 'php';
+        $lesson->link = 'https://nba.com';
         $lesson->save();
     }
 

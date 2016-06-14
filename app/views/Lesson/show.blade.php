@@ -15,8 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/css/lesson.css">
 </head>
 <body>
-    {{-- where the vid goes --}}
-    <img src="{{action('LessonsController@show', $lesson->link)}}" class="holder">
+    <a href="{{$lesson->link}}"><?php echo $lesson->link ?></a>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5">

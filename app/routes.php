@@ -34,8 +34,8 @@ Route::post('/signup', 'HomeController@doSignup');
 // Route::resource('lessons', 'HomeController@lessons');
 // Route::resource('lesson', 'HomeController@lesson');
 
-Route::resource('lessons', 'LessonsController'); // <----------- ISAAC SAID YOU ARE DOING IT WRONG DO LIKE THIS
-// P.S. QUIT DICKING AROUND - NICKY
+// Route::resource('lessons', 'LessonsController'); // <----------- ISAAC SAID YOU ARE DOING IT WRONG DO LIKE THIS
+// // P.S. QUIT DICKING AROUND - NICKY
 
 //account
 Route::get('account', 'HomeController@account');
