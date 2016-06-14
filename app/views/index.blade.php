@@ -7,7 +7,7 @@
 <div class="row">
 	<div class="col-md-6">
 		<a href="/signup"><img class="signupimg" src="../img/signup.png"></a>
-		<img class="signinimg" src="../img/signin.png">
+		<a href="/login"><img class="signinimg" src="../img/signin.png"></a>
 	</div>
 
 	<div class="col-md-6 mission-col">
