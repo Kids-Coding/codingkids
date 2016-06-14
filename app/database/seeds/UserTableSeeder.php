@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class UserTableSeeder extends Seeder {
 
@@ -10,8 +10,7 @@ class UserTableSeeder extends Seeder {
         $user->childName = "Jim Smith";
         $user->username = "codelover";
         $user->email = "codelover@gmail.com";
-        $user->password = "lovecode";
-        $user->confirmPassword = "lovecode";
+        $user->password = Hash::make($_ENV['USER_PASSWORD']);
         $user->save();
         
         $user = new User();
@@ -19,8 +18,7 @@ class UserTableSeeder extends Seeder {
         $user->childName = "Sarah Smith";
         $user->username = "youngcoda";
         $user->email = "youngcoda@gmail.com";
-        $user->password = "codacoda";
-        $user->confirmPassword = "codacoda";
+        $user->password = Hash::make($_ENV['USER_PASSWORD']);
         $user->save();
 
         $user = new User();
@@ -28,8 +26,7 @@ class UserTableSeeder extends Seeder {
         $user->childName = "Jill Smith";
         $user->username = "imonlyten";
         $user->email = "imonlyten@gmail.com";
-        $user->password = "imten";
-        $user->confirmPassword = "imten";
+        $user->password = Hash::make($_ENV['USER_PASSWORD']);
         $user->save();        
     }
 
