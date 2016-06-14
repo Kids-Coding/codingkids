@@ -41,7 +41,7 @@ class HomeController extends BaseController {
 		if (Auth::attempt(array('username' => $username, 'password' => $password)))
 		{
 			Session::flash('successMessage', 'Login successful');
-			return Redirect::intended('/lessons');
+			return Redirect::intended('/account');
 		} else {
 			Session::flash('errorMessage', 'Login failed');
 			return Redirect::back()->withInput();
