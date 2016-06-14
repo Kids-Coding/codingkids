@@ -8,37 +8,48 @@ this is the lessons page
 <div>
     <br>
     
-    @foreach ($lesson as $lesson)
-    @if ($lesson->category == 'html')
-    html
     <div class="btn-group">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Action <span class="caret"></span>
     </button>
-    <ul class="dropdown-menu">
-    <li><a href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->lessons}}</a></li>
-    </ul>
+        <ul class="dropdown-menu">
+    @foreach ($lessons as $lesson)
+    @if ($lesson->category == 'html')
+    html
+        <li><a href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->name}}</a></li>
+    @endif
+    @endforeach
+        </ul>
     </div>
-    @endif
-    @endforeach
 
-    @foreach ($lesson as $lesson)
+   <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+    </button>
+        <ul class="dropdown-menu">
+    @foreach ($lessons as $lesson)
     @if ($lesson->category == 'css')
-
     css
-    <a href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->lessons}}</a>
+        <li><a href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->name}}</a></li>
     @endif
     @endforeach
+        </ul>
+    </div>
 
-    @foreach ($lesson as $lesson)
+<div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+    </button>
+        <ul class="dropdown-menu">
+    @foreach ($lessons as $lesson)
     @if ($lesson->category == 'php')
-
     php
-    <a href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->lessons}}</a>
+        <li><a href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->name}}</a></li>
     @endif
-</div>
     @endforeach
-    
+        </ul>
+    </div>
+</div>
 
 
 
