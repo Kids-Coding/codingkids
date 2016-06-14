@@ -96,7 +96,7 @@ class HomeController extends BaseController {
     $user->password = Hash::make(Input::get('password'));
     $user->save();
     Session::flash('successMessage', 'Welcome ' . ucwords($user->username));
-    return Redirect::intended('/lessons');
+    return Redirect::intended('/account');
     //return Redirect::action('HomeController@profile', $user->$id);
   }
 
