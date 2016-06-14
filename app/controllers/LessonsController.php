@@ -14,5 +14,10 @@ class LessonsController extends BaseController {
         return View::make('lesson.show')->with('lesson', $lesson);
     }
 
+    public function html()
+    {
+        return View::make('html');
+    }
+
 
 }
