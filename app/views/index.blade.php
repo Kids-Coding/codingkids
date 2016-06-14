@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="video"></div>
+<img class="video" src="../img/videoholder.jpg">
 
 <div class="row">
 	<div class="col-md-6">

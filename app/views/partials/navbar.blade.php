@@ -23,8 +23,8 @@
           @endif
           <ul class="dropdown-menu">
             @if(Auth::check())
-              <li><a href="{{{ action('HomeController@doLogout') }}}">Logout</a></li>
               <li><a href="{{{ action('HomeController@account') }}}">Account</a></li>
+              <li><a href="{{{ action('HomeController@doLogout') }}}">Logout</a></li>
             @endif
           </ul>
         </li>

@@ -162,3 +162,20 @@ h3{
 	font-size: 30px;
 	font-family: 'Amatic SC';
 }
+
+.lessons-title{
+	font-size: 80px;
+	font-family: 'Lobster';
+	color: #9013fe;
+	text-align: center;
+}
+
+.lessons-div{
+	text-align: center;
+	margin-top: 50px;	
+}
+
+.lessons-btn{
+	width: 200px;
+	height: 75px;
+}
