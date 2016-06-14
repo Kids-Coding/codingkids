@@ -21,5 +21,6 @@
     @include('partials.alerts.success')
     @yield('content')
     @include('partials.footer')
+    @yield('scripts')
 </body>
 </html>

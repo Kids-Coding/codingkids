@@ -1,7 +1,5 @@
 <?php 
-
 class LessonsController extends BaseController {
-
     public function index()
         {
             if(Auth::check()){
@@ -12,12 +10,9 @@ class LessonsController extends BaseController {
                 return Redirect::action('HomeController@showIndex');
             }
         }
-
     public function show($id)
     {
         $lesson = Lesson::find($id);
         return View::make('lesson.show')->with('lesson', $lesson);
     }
-
-
 }
