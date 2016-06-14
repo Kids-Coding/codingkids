@@ -16,6 +16,10 @@ body {
 	margin-bottom: 0px;
 }
 
+.nav-links{
+	padding-top: 30px;
+}
+
 .form{
 	padding-left: 70px;
 	padding-right: 100px;
@@ -109,12 +113,6 @@ body {
 	color: #9013fe;
 }
 
-.navbar-right{
-	margin-top: 30px;
-	margin-right: 50px;
-	font-size: 15px;
-}
-
 .login-form{
 	text-align: center;
 }
@@ -154,13 +152,6 @@ h3{
 
 @media (min-width: 0px) and (max-width: 1080px){
     .footer { 
-        display : none; 
-        visibility : hidden; 
-    }
-}
-
-@media (min-width: 0px) and (max-width: 1080px){
-    .navbar { 
         display : none; 
         visibility : hidden; 
     }
