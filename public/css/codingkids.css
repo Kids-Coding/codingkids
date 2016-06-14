@@ -16,6 +16,10 @@ body {
 	margin-bottom: 0px;
 }
 
+.nav-links{
+	padding-top: 30px;
+}
+
 .form{
 	padding-left: 70px;
 	padding-right: 100px;
@@ -109,12 +113,6 @@ body {
 	color: #9013fe;
 }
 
-.navbar-right{
-	margin-top: 30px;
-	margin-right: 50px;
-	font-size: 15px;
-}
-
 .login-form{
 	text-align: center;
 }
@@ -138,4 +136,23 @@ body {
 
 .alert-danger{
 	text-align: center;
+}
+
+.hello-account{
+	font-family: 'Lobster';
+	font-size: 70px;
+	text-align: center;
+	color: #9013fe;
+}
+
+h3{
+	font-family: 'Amatic SC';
+	font-size: 40px;
+}
+
+@media (min-width: 0px) and (max-width: 1080px){
+    .footer { 
+        display : none; 
+        visibility : hidden; 
+    }
 }

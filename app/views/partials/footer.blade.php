@@ -1,6 +1,6 @@
 <footer class="footer navbar-fixed-bottom">
 	<div class="row footerinfo">
-		<div class="col-md-6 followus">
+		<div class="col-md-6 followus col-sm-12">
 			<span class="footer-coding-kids">Coding Kids© </span>
 			Follow Us On: 
 			<span class="fa fa-twitter"></span>
