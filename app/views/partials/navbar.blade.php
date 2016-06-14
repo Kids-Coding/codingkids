@@ -8,6 +8,7 @@
     <ul class="nav navbar-nav navbar-right">
       @if(Auth::check())
         <li><a href="{{{ action('HomeController@doLogout') }}}">Logout</a></li>
+        <li><a href="{{{ action('HomeController@account') }}}">Account</a></li>
       @else
         <li><a href="{{{ action('HomeController@loginForm') }}}">Log In</a></li>
         <li><a href="{{{ action('HomeController@signupForm') }}}">Sign Up</a></li>
