@@ -3,13 +3,25 @@
 @section('content')
 
 this is the lessons page
-<br>
-<a href="html">html</a>
-<br>
-<a href="css">css</a>
-<br>
-<a href="php">php</a>
-<br>
+
+
+    @foreach ($lesson as $lesson)
+<div>
+    <br>
+    @if ($lesson->category == 'html')
+
+    html
+    <a href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->lessons}}</a>
+    @endif
+
+    @if ($lesson->category == 'css')
+
+    css
+    <a href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->lessons}}</a>
+    @endif
+</div>
+    @endforeach
+
 
 
 @stop

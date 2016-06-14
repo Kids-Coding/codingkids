@@ -15,8 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/css/lesson.css">
 </head>
 <body>
-    {{-- where the vid goes --}}
-    <img src="{{action('LessonsController@show', $lesson->link)}}" class="holder">
+    {{Lesson::find($lesson->id)}}
         <div class="container">
             <div class="row">
                 <div class="col-sm-5">
