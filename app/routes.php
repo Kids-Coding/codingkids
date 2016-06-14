@@ -31,14 +31,17 @@ Route::get('/signup', 'HomeController@signupForm');
 Route::post('/signup', 'HomeController@doSignup');
 
 //lessons
-Route::resource('lessons', 'HomeController@lessons');
-Route::resource('lesson', 'HomeController@lesson');
+// Route::resource('lessons', 'HomeController@lessons');
+// Route::resource('lesson', 'HomeController@lesson');
 
 Route::resource('lessons', 'LessonsController'); // <----------- ISAAC SAID YOU ARE DOING IT WRONG DO LIKE THIS
 // P.S. QUIT DICKING AROUND - NICKY
 
 //account
-Route::resource('account', 'HomeController@account');
+Route::get('account', 'HomeController@account');
+
+//lessons controller
+Route::resource('lessons', 'LessonsController');
 
 
 
