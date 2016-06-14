@@ -21,11 +21,6 @@ class HomeController extends BaseController {
 
 	public function showIndex()
 	{
-		if(Auth::check())
-		{
-			Session::flash('errorMessage', 'Stop dickin\' around and work');
-			return Redirect::back();
-		}
 		return View::make('index');
 	}
 
