@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/css/lesson.css">
 </head>
 <body>
-    {{Lesson::find($lesson->id)}}
+    <a href="{{$lesson->link}}"><?php echo $lesson->link ?></a>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5">
