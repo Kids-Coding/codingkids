@@ -139,3 +139,29 @@ body {
 .alert-danger{
 	text-align: center;
 }
+
+.hello-account{
+	font-family: 'Lobster';
+	font-size: 70px;
+	text-align: center;
+	color: #9013fe;
+}
+
+h3{
+	font-family: 'Amatic SC';
+	font-size: 40px;
+}
+
+@media (min-width: 0px) and (max-width: 1080px){
+    .footer { 
+        display : none; 
+        visibility : hidden; 
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1080px){
+    .navbar { 
+        display : none; 
+        visibility : hidden; 
+    }
+}
