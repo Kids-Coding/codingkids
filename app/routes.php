@@ -16,6 +16,8 @@ Route::get('/', 'HomeController@showIndex');
 
 //temp landing page
 // Route::get('/', 'HomeController@showTemp');
+//about page
+// Route::get('/about', 'HomeController@about');
 
 //login
 Route::get('/login', 'HomeController@loginForm');
@@ -23,9 +25,6 @@ Route::post('/login', 'HomeController@doLogin');
 
 //logout
 Route::get('/logout', 'HomeController@doLogout');
-
-//lessons
-Route::get('/lessons', 'HomeController@lessons');
 
 //signup
 Route::get('/signup', 'HomeController@signupForm');
@@ -35,7 +34,9 @@ Route::post('/signup', 'HomeController@doSignup');
 Route::resource('lessons', 'HomeController@lessons');
 Route::resource('lesson', 'HomeController@lesson');
 
-Route::get('/about', 'HomeController@about');
+//account
+Route::resource('account', 'HomeController@account');
+
 
 
 //test thing
