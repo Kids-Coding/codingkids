@@ -14,10 +14,13 @@
 
 </head>
 <body>
-    @include('partials.navbar')
-    @include('partials.alerts.error')
-    @include('partials.alerts.success')
-    @yield('content')
+    <div class="page-wrap">
+        @include('partials.navbar')
+        @include('partials.alerts.error')
+        @include('partials.alerts.success')
+        @yield('content')
+    </div>
+
     @include('partials.footer')
     @yield('scripts')
 </body>

@@ -3,7 +3,7 @@
 @section('content')
 
 
-<p class="login">Log In!</p>
+<p class="titles">Log In!</p>
 {{ Form::open(array('action' => 'HomeController@doLogin')) }}
   	<div class="form-group">
     	<div class="col-md-6 col-md-offset-3 login-input">
