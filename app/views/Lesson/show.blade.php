@@ -4,25 +4,25 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="center">
                     <div class="lessonbtn">
-                        <button class="btn btn-info" type="button">Lesson</button> 
+                        <button class="btn btn-info btn-lg" type="button">Lesson</button> 
                     </div>
                     <div class="lessonbtn">
-                        <button class="btn btn-info" type="button">Summary</button> 
+                        <button class="btn btn-info btn-lg" type="button">Summary</button> 
                     </div>
                     <div class="lessonbtn">
-                        <button class="btn btn-info" type="button">Quiz</button>  
+                        <button class="btn btn-info btn-lg" type="button">Quiz</button>  
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-8">
                 <div class='center'>
                     <div id='player'></div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="center">
                     <p>1.lesson html</p>
                     <p>2.lesson html</p>
@@ -32,20 +32,23 @@
         </div>
             
         <div class="row">
-            <div class="col-sm-5">
-                Editor:<br>
-                <textarea id="editor"></textarea>
-            </div> <!-- end col -->
-            <div class="col-sm-2">
-                <button class="btn btn-lg btn-info" type="button" onclick="codingKids()">Try it</button> 
-            </div> <!-- end col -->
-            <div class="col-sm-5">
-                View:<br>
-                <div id="view">
-                </div>
-            </div> <!-- end col -->
+            <div class="center">
+                <div class="col-md-5">
+                    Editor:<br>
+                    <textarea id="editor"></textarea>
+                </div> <!-- end col -->
+                <div class="col-md-2">
+                    <button class="btn btn-lg btn-info tryme" type="button" onclick="codingKids()">Try it</button> 
+                </div> <!-- end col -->
+                <div class="col-md-5">
+                    View:<br>
+                    <div id="view">
+                    </div>
+                </div> <!-- end col -->
+            </div>
         </div> <!-- end row -->
-    </div> <!-- end container -->
+    </div>
+   
 @stop
 @section('script')
 <script type="text/javascript">
