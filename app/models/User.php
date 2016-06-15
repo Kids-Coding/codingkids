@@ -29,4 +29,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		'childName'	=> 'required',
 		'password' => 'required|confirmed'
 	];
+
+	public function lessons(){
+		 return $this->belongsToMany('Lesson');
+	}
 }

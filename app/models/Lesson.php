@@ -23,4 +23,8 @@ class Lesson extends Eloquent implements UserInterface, RemindableInterface {
      */
     protected $hidden = array('password', 'remember_token');
 
+    public function users(){
+        return $this->belongsToMany('User');
+    }
+
 }

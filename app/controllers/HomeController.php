@@ -69,7 +69,11 @@ class HomeController extends BaseController {
     public function account()
     {
     	if(Auth::check()){
-        	return View::make('account');
+    		$htmlLessons = Lesson::where('category', 'html')->lists('id');
+    		$completedLessons = LessonUser::where('user_id', Auth::user()->id)->lists('lesson_id');
+    		$htmlCompleteNumber = array_intersect($htmlLessons, $completedLessons);
+    		
+        	return View::make('account')->with('htmlCompleteNumber', $htmlCompleteNumber)->with('htmlLessons', $htmlLessons);
     	} else {
     		Session::flash('errorMessage', 'You must be logged in to view this page.');
     		return Redirect::intended('/login');
