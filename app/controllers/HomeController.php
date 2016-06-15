@@ -101,13 +101,9 @@ class HomeController extends BaseController {
     $validator = Validator::make(Input::all(), User::$rules);
     // attempt validation
     if ($validator->fails()) {
-        // validation failed, redirect to the post create page with validation errors and old inputs\
       Session::flash('errorMessage', 'Account not created.');
-      // Create log of all info to be passed
-     // $Log::info(Input::all()); --------    ------  ~$Log Not Defined~
       return Redirect::back()->withInput()->withErrors($validator);
     }
-    // validation succeeded, create and save the post
     $user = new User();
     $user->parentName = Input::get('parentName');
     $user->childName = Input::get('childName');
@@ -115,9 +111,7 @@ class HomeController extends BaseController {
     $user->email = Input::get('email');
     $user->password = Hash::make(Input::get('password'));
     $user->save();
-    Session::flash('successMessage', 'Welcome ' . ucwords($user->username));
     return Redirect::intended('/account');
-    //return Redirect::action('HomeController@profile', $user->$id);
   }
 
 
