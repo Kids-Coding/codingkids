@@ -12,15 +12,12 @@ textarea {
     outline: none;
     height: 350px;
     width: 450px;
-    border: inset;
     background-color: black;
     color: #9efc7d;
 }
 
-.btn-lg {
-    box-shadow: 1px 1px 2px #888888;
+.tryme {
     margin-top: 175px;
-    margin-left: 50px;
     background-color: #ce95c8;
     color: #fff07a;
 }
@@ -33,8 +30,12 @@ textarea {
 }
 
 .lessonbtn{
-    padding-bottom: 10px;
+    padding-top: 40px;
 }
 
+#editor, #view{
+    border: none;
+    border-radius: 10px;
+}
 
 
