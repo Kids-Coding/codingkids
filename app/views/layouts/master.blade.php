@@ -17,7 +17,7 @@
 <div class='heads'>
     <img src="../img/teachers2.png">
     <audio id='mp3'>
-        <source src='../mp3/screaming.mp3'></source>
+        <source src='../mp3/hey.mp3'></source>
     </audio>
 </div>
 <body>
