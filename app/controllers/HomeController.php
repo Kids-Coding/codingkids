@@ -27,7 +27,12 @@ class HomeController extends BaseController {
 
 	public function loginForm()
 	{
-		return View::make('login');
+		if(Auth::check()){
+			Session::flash('errorMessage' , 'You are already logged in.');
+			return Redirect::intended('/account');
+		} else {
+			return View::make('login');
+		}
 	}
 
 	public function doLogin()
@@ -72,7 +77,7 @@ class HomeController extends BaseController {
     		$htmlLessons = Lesson::where('category', 'html')->lists('id');
     		$completedLessons = LessonUser::where('user_id', Auth::user()->id)->lists('lesson_id');
     		$htmlCompleteNumber = array_intersect($htmlLessons, $completedLessons);
-    		
+
         	return View::make('account')->with('htmlCompleteNumber', $htmlCompleteNumber)->with('htmlLessons', $htmlLessons);
     	} else {
     		Session::flash('errorMessage', 'You must be logged in to view this page.');
