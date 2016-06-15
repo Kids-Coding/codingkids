@@ -1,5 +1,6 @@
 body {
     background-color: #5abfc6;
+    height: 100%;
 }
 
 textarea {
@@ -26,4 +27,5 @@ textarea {
     border: inset;
     background-color: white;
 }
+
 
