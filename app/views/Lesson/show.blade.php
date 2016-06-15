@@ -2,8 +2,39 @@
 
 @section('content')
     <div class="container">
-        <div class='center'>
-            <div id='player'></div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="row nuts">
+                <div class="col-sm-1">
+                    <button class="btn btn-lg btn-info" type="button">Lesson</button>  
+                </div>
+                </div>
+                 <div class="row nuts">
+                <div class="col-sm-1">
+                    <button class="btn btn-lg btn-info" type="button">Summary</button>  
+                </div>
+                </div>
+                 <div class="row nuts">
+                <div class="col-sm-1">
+                    <button class="btn btn-lg btn-info" type="button">Quiz</button>  
+                </div>
+                </div>
+            <div class="col-sm-6">
+                <div class='center'>
+                    <div id='player'></div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class='center'>
+                    <div> 
+                        <p>1.lesson html</p>
+                        <p>2.lesson html</p>
+                        <p>3.lesson html</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
         </div>
         <div class="row">
             <div class="col-sm-5">
