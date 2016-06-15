@@ -209,3 +209,18 @@ h3{
 	width: auto;
 	padding-top: 100px;
 }
+
+.about{
+	padding-left: 50px;
+	padding-top: 50px;
+	padding-right: 50px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Voltaire', sans-serif;
+	line-height: 40px;
+}
+
+.whyck{
+	font-size: 25px;
+	
+}
