@@ -3,6 +3,10 @@ body {
     height: 100%;
 }
 
+.container{
+    padding-top: 20px;
+}
+
 textarea {
     resize: none;
     outline: none;
@@ -13,7 +17,7 @@ textarea {
     color: #9efc7d;
 }
 
-.btn {
+.btn-lg {
     box-shadow: 1px 1px 2px #888888;
     margin-top: 175px;
     margin-left: 50px;
@@ -26,6 +30,10 @@ textarea {
     width: 450px;
     border: inset;
     background-color: white;
+}
+
+.lessonbtn{
+    padding-bottom: 10px;
 }
 
 

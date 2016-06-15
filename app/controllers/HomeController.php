@@ -87,7 +87,12 @@ class HomeController extends BaseController {
 
 	public function signupForm()
 	{
-		return View::make('signup');
+		if(Auth::check()){
+			Session::flash('errorMessage' , 'You already have an account.');
+			return Redirect::intended('/account');
+		} else {
+			return View::make('signup');
+		}
 	}
 
 	public function doSignUp()
