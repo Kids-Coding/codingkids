@@ -1,15 +1,10 @@
 @extends('layouts.lesson')
 
 @section('content')
-
-    <a href="{{$lesson->link}}"><?php echo $lesson->link ?></a>
-    <br>
     <div class="container">
-    <div class='center'>
-        <div id='player'></div>
-    </div>
-
-
+        <div class='center'>
+            <div id='player'></div>
+        </div>
         <div class="row">
             <div class="col-sm-5">
                 Editor:<br>
@@ -29,7 +24,7 @@
 @section('script')
 <script type="text/javascript">
 
-var tag = document.createElement('script');
+        var tag = document.createElement('script');
         tag.src = 'https://www.youtube.com/iframe_api';
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
