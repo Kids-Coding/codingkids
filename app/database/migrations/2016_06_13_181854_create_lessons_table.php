@@ -17,6 +17,7 @@ class CreateLessonsTable extends Migration {
 			$table->increments('id');
 			$table->string('name');
 			$table->string('link');
+			$table->string('yt_id');
 			$table->string('category');
 			$table->rememberToken();
 			$table->timestamps();
