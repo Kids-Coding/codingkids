@@ -44,9 +44,13 @@
 
 <div class="row">
     <div class="col-md-12 joke">
-        <p class="joke-quest">Why did the fly never land on the computer?</p>
-        <p class="joke-answer">He was afraid of the world wide web.</p>
+        <p class="joke-quest"></p>
+        <p class="joke-answer"></p>
     </div>
 </div>
 
 @stop
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="../js/lessonMain.js"></script>
+ 

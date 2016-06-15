@@ -8,7 +8,9 @@
 	<div class="col-xs-6 col-xs-offset-1">
 		<h3 id="HTML_progress">HTML Progress</h3>
 		<div class="progress">
-			<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
+			<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+				{{-- {{ count($htmlCompleteNumber) * 100 / $htmlLessons }} --}}
+			</div>
 		</div>
 		<h3 id="CSS_progress">CSS Progress</h3>
 		<div class="progress">
