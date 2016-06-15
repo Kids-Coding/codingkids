@@ -1,8 +1,46 @@
-body { 
-	padding-bottom: 77px; 
+html, body { 
+	height: 100%;
+	width: 100%;
 	background-color: #E9EAEA;
+}	
+
+
+* {
+    margin: 0;
 }
 
+.page-wrap {
+  	min-height: 100%;
+    margin-bottom: -70px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+    height: 70px; 
+}
+
+footer{
+	background-color: #69DB0E;
+	font-family: 'Amatic SC';
+	font-size: 25px; 
+}
+
+.footerinfo{
+	background-color: #69DB0E;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.subscribe{
+	padding-right: 15px;
+}
+
+.followus{
+	padding-left: 50px;
+}
 .navimg{
 	width: 400px;
 	height: auto;
@@ -70,31 +108,10 @@ body {
 	font-family: 'Roboto Mono';
 }
 
-
 .copyright-image{
 	width: 20px;
 }
 
-.footer{
-	background-color: #69DB0E;
-	padding-top: 10px;
-	font-family: 'Amatic SC';
-	font-size: 25px; 
-}
-
-.footerinfo{
-	background-color: #69DB0E;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-.subscribe{
-	padding-right: 15px;
-}
-
-.followus{
-	padding-left: 50px;
-}
 
 .gears{
 	margin-top: 100px;
@@ -117,15 +134,6 @@ body {
 	text-align: center;
 }
 
-.login{
-	padding-top: 90px;
-	padding-bottom: 40px;
-	text-align: center;
-	font-family: 'Lobster';
-	font-size: 80px;
-	color:  #9013fe;
-}
-
 .login-input{
 	margin-bottom: 20px;
 }
@@ -134,11 +142,11 @@ body {
 	padding-right: 10px;
 }
 
-.alert-danger{
+.alert{
 	text-align: center;
 }
 
-.hello-account{
+.titles{
 	font-family: 'Lobster';
 	font-size: 70px;
 	text-align: center;
@@ -161,13 +169,6 @@ h3{
 	padding-top: 80px;
 	font-size: 30px;
 	font-family: 'Amatic SC';
-}
-
-.lessons-title{
-	font-size: 80px;
-	font-family: 'Lobster';
-	color: #9013fe;
-	text-align: center;
 }
 
 .lessons-div{

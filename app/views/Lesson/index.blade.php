@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<p class="lessons-title">All Lessons</p>
+<p class="titles">All Lessons</p>
 
 <div class="row">
     <div class="col-md-4 lessons-div">
