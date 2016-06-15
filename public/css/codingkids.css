@@ -201,3 +201,11 @@ h3{
 .center {
 	text-align: center;
 }
+
+.heads {
+	display: none;
+	position: absolute;
+	left: 25%;
+	width: auto;
+	padding-top: 100px;
+}

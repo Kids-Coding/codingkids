@@ -13,6 +13,12 @@
     {{ HTML::style('/css/codingkids.css') }}
 
 </head>
+<div class='heads'>
+    <img src="../img/teachers.png">
+    <audio id='mp3'>
+        <source src='../mp3/screaming.mp3'></source>
+    </audio>
+</div>
 <body>
     <div class="page-wrap">
         @include('partials.navbar')
@@ -23,5 +29,28 @@
 
     @include('partials.footer')
     @yield('scripts')
+
+
+    <script>
+
+        var konami_keys = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+        var konami_index = 0;
+        
+        $(document).keydown(function(e){
+            if(e.keyCode === konami_keys[konami_index++]){
+                if(konami_index === konami_keys.length){
+                    $('.heads').slideDown('slow', function(){
+                        var audio = document.getElementById('mp3');
+                        audio.play();
+                    }).delay(1500).slideUp('slow');
+                }
+            }else{
+            konami_index = 0;
+            }
+        });
+
+    </script>
+
+
 </body>
 </html>
