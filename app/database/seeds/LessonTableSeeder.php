@@ -17,7 +17,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'lesson2';
         $lesson->category = 'html';
         $lesson->link = 'https://yahoo.com';
-        $lesson->yt_id = 'kfchvCyHmsc';
+        $lesson->yt_id = 'suKW5E93xgw';
         $lesson->summary = "
 
 <!--Title -->
@@ -53,11 +53,7 @@ class LessonTableSeeder extends Seeder {
             are using to write our story.
             </p> <!--end doctype p -->
         </div> <!--end doctype -->
-        <div>
-            <a href='#' class='example-btn btn btn-default'>
-                Example
-            </a> <!--end href -->
-        </div> <!--end col -->
+        
         <div>
             <img src='/img/example1.png'>
         </div> <!--end monkey/col -->
@@ -77,11 +73,7 @@ class LessonTableSeeder extends Seeder {
             We add this here because it will be the start of our 'magical paper'.
             </p> <!--end html open p -->
         </div> <!--end html open -->
-        <div>
-            <a href='#' class='example-btn btn btn-default'>
-                Example
-            </a> <!--end href -->
-        </div> <!--end col -->
+        
         <div>
             <img src='/img/example2.png'>
         </div> <!--end monkey/col -->
@@ -103,11 +95,7 @@ class LessonTableSeeder extends Seeder {
             Under that 'magical portal' we will type out &lt;/head&gt;. This will close our 'magical white space portal' at the top of our 'magical paper'.
             </p> <!--end head p -->
         </div> <!--end head -->
-        <div>
-            <a href='#' class='example-btn btn btn-default'>
-                Example
-            </a> <!--end href -->
-        </div> <!--end col -->
+        
         <div>
             <img src='/img/example5.png'>
         </div> <!--end monkey/col --> 
@@ -128,11 +116,7 @@ class LessonTableSeeder extends Seeder {
             This allows our story to stay where we need it and not get away. 
             </p> <!--end body p -->
         </div> <!--end body -->
-        <div>
-            <a href='#' class='example-btn btn btn-default'>
-                Example
-            </a> <!--end href -->
-        </div> <!--end col -->
+        
         <div>
             <img src='/img/example7.png'>
         </div> <!--end monkey/col -->
@@ -151,11 +135,7 @@ class LessonTableSeeder extends Seeder {
             This lets all the electronic devices that we are done with our story and our page ends here. 
             </p> <!--end html close p -->
         </div> <!--end html close -->
-        <div>
-            <a href='#' class='example-btn btn btn-default'>
-                Example
-            </a> <!--end href -->
-        </div> <!--end col -->         
+        
         <div>
             <img src='/img/example8.png'>
         </div> <!--end monkey/col -->
