@@ -10,6 +10,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'html';
         $lesson->link = 'https://google.com';
         $lesson->yt_id = 'kfchvCyHmsc';
+        $lesson->summary = ;
         $lesson->save();
 
         $lesson = new Lesson();
@@ -17,6 +18,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'html';
         $lesson->link = 'https://yahoo.com';
         $lesson->yt_id = 'kfchvCyHmsc';
+        $lesson->summary = ;
         $lesson->save();
 
         $lesson = new Lesson();
@@ -24,6 +26,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'html';
         $lesson->link = 'https://github.com';
         $lesson->yt_id = 'kfchvCyHmsc';
+        $lesson->summary = ;
         $lesson->save();
 
         $lesson = new Lesson();
@@ -31,6 +34,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'css';
         $lesson->link = 'https://reddit.com';
         $lesson->yt_id = 'FGXDKrUoVrw';
+        $lesson->summary = ;
         $lesson->save();
 
         $lesson = new Lesson();
@@ -38,6 +42,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'css';
         $lesson->link = 'https://facebook.com';
         $lesson->yt_id = 'FGXDKrUoVrw';
+        $lesson->summary = ;
         $lesson->save();
 
         $lesson = new Lesson();
@@ -45,6 +50,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'css';
         $lesson->link = 'https://nba.com';
         $lesson->yt_id = 'FGXDKrUoVrw';
+        $lesson->summary = ;
         $lesson->save();
     
         $lesson = new Lesson();
@@ -52,6 +58,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'php';
         $lesson->link = 'https://reddit.com';
         $lesson->yt_id = '8HlqSrCazqo';
+        $lesson->summary = ;
         $lesson->save();
 
         $lesson = new Lesson();
@@ -59,6 +66,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'php';
         $lesson->link = 'https://facebook.com';
         $lesson->yt_id = '8HlqSrCazqo';
+        $lesson->summary = ;
         $lesson->save();
 
         $lesson = new Lesson();
@@ -66,6 +74,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'php';
         $lesson->link = 'https://nba.com';
         $lesson->yt_id = '8HlqSrCazqo';
+        $lesson->summary = ;
         $lesson->save();
     }
 
