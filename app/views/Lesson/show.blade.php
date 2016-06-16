@@ -22,7 +22,76 @@
                                             <!-- Modal content -->
                                             <div class="modal-content">
                                             <span class="close">x</span>
-                        {{-- PUT SOME MODAL STUFF HERE OR ILL HAVE TO CUT YOU JEROD --}}
+
+                        {{-- ****** PUT SOME MODAL STUFF HERE OR ILL HAVE TO CUT YOU JEROD ******--}}
+
+
+                                <div class ="row">
+
+                                    <div class="col-sm-12 summary">
+
+                                        <!-- Trigger the modal with a button -->
+                                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Summary</button>
+
+                                        <!-- Modal -->
+                                        <div id="myModal" class="modal fade" role="dialog">
+
+                                            <div class="modal-dialog">
+
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+
+                                                    <!--modal header -->
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">Summary of Lesson</h4>
+                                                    </div>
+
+                                                    <!--modal body -->
+                                                    <div class="modal-body">
+                                                        <div class="container">
+
+
+
+
+                                                        {{-- Mhis is where i w?ll inject the GOODS --}}
+                                                        {{-- tAis is where i Eill inject the GOODS --}}
+                                                        {{-- thRs is where M will inject the GOODS --}}
+                                                        {{-- thiC is wherW i will inject the GOODS --}}
+                                                        {{-- this Us wheOe i will inject the GOODS --}}
+                                                        {{-- this iS whLre i will inject the GOODS --}}
+                                                        {{-- this is wBere i will inject the GOODS --}}
+                                                        {{-- this is where i will inject the GOODS --}}
+                                                        {{-- this is where i will inject the GOODS --}}
+
+
+
+
+                                                        </div> <!--end container -->
+
+                                                    </div> <!-- end modal body -->
+
+                                                    <!-- Modal content-->
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    </div> <!--end modal footer -->
+
+                                                </div> <!--end modal content -->
+
+                                            </div> <!--end modal dialog -->
+
+                                        </div> <!--end myModal -->
+
+                                    </div> <!--end col summary -->
+
+                                </div> <!--end row -->
+
+
+
+
+
+
+
                                             <p>{{$lesson->name}}</p>
                                             </div>
 
