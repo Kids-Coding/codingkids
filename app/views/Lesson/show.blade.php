@@ -11,92 +11,59 @@
                     <div class="lessonbtn">
                         <button class="btn btn-info btn-lg" type="button">Lesson</button> 
                     </div>
-                    <div class="lessonbtn">
 
-                                            <!-- Trigger/Open The Modal -->
-                                            <button id="myBtn" class='btn btn-info btn-lg'>Summary</button>
-
-                                            <!-- The Modal -->
-                                            <div id="myModal" class="modal">
-
-                                            <!-- Modal content -->
-                                            <div class="modal-content">
-                                            <span class="close">x</span>
-
+                    <div class="lessonbtn"> 
+                                                               
                         {{-- ****** PUT SOME MODAL STUFF HERE OR ILL HAVE TO CUT YOU JEROD ******--}}
+                        <div class ="row">
 
+                            <div class="col-sm-12 summary">
 
-                                <div class ="row">
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Summary</button>
 
-                                    <div class="col-sm-12 summary">
+                                <!-- Modal -->
+                                <div id="myModal" class="modal fade" role="dialog">
 
-                                        <!-- Trigger the modal with a button -->
-                                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Summary</button>
+                                    <div class="modal-dialog">
 
-                                        <!-- Modal -->
-                                        <div id="myModal" class="modal fade" role="dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
 
-                                            <div class="modal-dialog">
-
-                                                <!-- Modal content-->
-                                                <div class="modal-content">
-
-                                                    <!--modal header -->
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h4 class="modal-title">Summary of Lesson</h4>
-                                                    </div>
-
-                                                    <!--modal body -->
-                                                    <div class="modal-body">
-                                                        <div class="container">
-
-
-
-
-                                                        {{-- Mhis is where i w?ll inject the GOODS --}}
-                                                        {{-- tAis is where i Eill inject the GOODS --}}
-                                                        {{-- thRs is where M will inject the GOODS --}}
-                                                        {{-- thiC is wherW i will inject the GOODS --}}
-                                                        {{-- this Us wheOe i will inject the GOODS --}}
-                                                        {{-- this iS whLre i will inject the GOODS --}}
-                                                        {{-- this is wBere i will inject the GOODS --}}
-                                                        {{-- this is where i will inject the GOODS --}}
-                                                        {{-- this is where i will inject the GOODS --}}
-
-
-
-
-                                                        </div> <!--end container -->
-
-                                                    </div> <!-- end modal body -->
-
-                                                    <!-- Modal content-->
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                    </div> <!--end modal footer -->
-
-                                                </div> <!--end modal content -->
-
-                                            </div> <!--end modal dialog -->
-
-                                        </div> <!--end myModal -->
-
-                                    </div> <!--end col summary -->
-
-                                </div> <!--end row -->
-
-
-
-
-
-
-
-                                            <p>{{$lesson->name}}</p>
+                                            <!--modal header -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Summary of Lesson</h4>
                                             </div>
 
-                                            </div>
+                                            <!--modal body -->
+                                            <div class="modal-body">
+
+                                                <div class="container">
+
+                                                    {{$lesson->summary}}
+
+                                                </div> <!--end container -->
+
+                                            </div> <!-- end modal body -->
+
+                                            <!-- Modal content-->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div> <!--end modal footer -->
+
+                                        </div> <!--end modal content -->
+
+                                    </div> <!--end modal dialog -->
+
+                                </div> <!--end myModal -->
+
+                            </div> <!--end col summary -->
+
+                        </div> <!--end row -->
+
                     </div>
+                    
                     <div class="lessonbtn">
                         <button class="btn btn-info btn-lg" type="button">Quiz</button>  
                     </div>
