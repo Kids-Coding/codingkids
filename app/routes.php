@@ -43,6 +43,8 @@ Route::get('account', 'HomeController@account');
 //lessons controller
 Route::resource('lessons', 'LessonsController');
 
+Route::get('/webpage' , 'HomeController@showWebPage');
+
 //test thing
 Route::get('orm-test', function ()
 {

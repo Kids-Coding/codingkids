@@ -20,6 +20,12 @@ class HomeController extends BaseController {
 		return View::make('temp');
 	}
 
+	public function showWebPage()
+	{
+		return View::make('/webpage');
+	}
+
+
 	public function showIndex()
 	{
 		return View::make('index');
@@ -123,6 +129,4 @@ class HomeController extends BaseController {
 		Session::flash('successMessage', 'Your account was successfully deleted.');
 		return Redirect::intended('/');
 	}
-
-
 }

@@ -225,3 +225,31 @@ h3{
 	font-size: 25px;
 	
 }
+
+.comingsoon{
+	width: 1000px;
+	height: 100%;
+	padding-top: 50px;
+}
+
+.heads{
+	width: 200px;
+}
+
+.names{
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 100px;
+}
+
+.createdby{
+	font-size: 40px;
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+.line{
+	height: 5px;
+	background-color: black;
+	margin-bottom: 50px;
+}
