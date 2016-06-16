@@ -39,7 +39,7 @@ class HomeController extends BaseController {
 	{
 		$username = Input::get('username');
 		$password = Input::get('password');
-		if (Auth::attempt(array('username' => $username, 'password' => $password)))
+		if (Auth::attempt(array('username' => $username, 'password' => $password), true))
 		{
 			Session::flash('successMessage', 'Login successful');
 			return Redirect::intended('/account');
@@ -95,24 +95,25 @@ class HomeController extends BaseController {
 		}
 	}
 
-	public function doSignUp()
-  {
-    // create the validator
-    $validator = Validator::make(Input::all(), User::$rules);
-    // attempt validation
-    if ($validator->fails()) {
-      Session::flash('errorMessage', 'Account not created.');
-      return Redirect::back()->withInput()->withErrors($validator);
-    }
-    $user = new User();
-    $user->parentName = Input::get('parentName');
-    $user->childName = Input::get('childName');
-    $user->username = Input::get('username');
-    $user->email = Input::get('email');
-    $user->password = Hash::make(Input::get('password'));
-    $user->save();
-    return Redirect::intended('/account');
-  }
+  public function doSignUp()
+	{
+	    $validator = Validator::make(Input::all(), User::$rules);
+	    if ($validator->fails()) {
+	        Session::flash('errorMessage', 'Account not created.');
+      		return Redirect::back()->withInput()->withErrors($validator);
+	    } else {
+	        $user = new User();
+		    $user->parentName = Input::get('parentName');
+		    $user->childName = Input::get('childName');
+		    $user->username = Input::get('username');
+		    $user->email = Input::get('email');
+		    $user->password = Hash::make(Input::get('password'));
+		    $user->save();
+			Session::flash('successMessage', 'Welcome ' . $user->childName . '! Your account has been successfully created.');
+			Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password')));
+			return Redirect::intended('/account');
+		}
+	}
 
 
   public function destroy($id)

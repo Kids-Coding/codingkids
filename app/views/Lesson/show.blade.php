@@ -13,22 +13,15 @@
                     </div>
 
                     <div class="lessonbtn"> 
-                                                               
-                        {{-- ****** PUT SOME MODAL STUFF HERE OR ILL HAVE TO CUT YOU JEROD ******--}}
-
-<button id="myBtn" class='btn btn-info btn-lg'>Summary</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-<!-- Modal content -->
-<div class="modal-content">
-<span class="close">x</span>
-{{$lesson->summary}}
-</div>
-
-</div>
-
+                        <button id="myBtn" class='btn btn-info btn-lg'>Summary</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span class="close">x</span>
+                                    {{$lesson->summary}}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="lessonbtn">
