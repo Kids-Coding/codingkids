@@ -39,7 +39,7 @@ class HomeController extends BaseController {
 	{
 		$username = Input::get('username');
 		$password = Input::get('password');
-		if (Auth::attempt(array('username' => $username, 'password' => $password)))
+		if (Auth::attempt(array('username' => $username, 'password' => $password), true))
 		{
 			Session::flash('successMessage', 'Login successful');
 			return Redirect::intended('/account');
