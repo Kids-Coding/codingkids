@@ -1,5 +1,7 @@
 @extends('layouts.lesson')
 
+<script src="../js/showPage.js"></script>
+
 @section('content')
     <div class="container">
 
@@ -10,7 +12,21 @@
                         <button class="btn btn-info btn-lg" type="button">Lesson</button> 
                     </div>
                     <div class="lessonbtn">
-                        <button class="btn btn-info btn-lg" type="button">Summary</button> 
+
+                                            <!-- Trigger/Open The Modal -->
+                                            <button id="myBtn" class='btn btn-info btn-lg'>Summary</button>
+
+                                            <!-- The Modal -->
+                                            <div id="myModal" class="modal">
+
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                            <span class="close">x</span>
+                        {{-- PUT SOME MODAL STUFF HERE OR ILL HAVE TO CUT YOU JEROD --}}
+                                            <p>{{$lesson->name}}</p>
+                                            </div>
+
+                                            </div>
                     </div>
                     <div class="lessonbtn">
                         <button class="btn btn-info btn-lg" type="button">Quiz</button>  
