@@ -15,52 +15,19 @@
                     <div class="lessonbtn"> 
                                                                
                         {{-- ****** PUT SOME MODAL STUFF HERE OR ILL HAVE TO CUT YOU JEROD ******--}}
-                        <div class ="row">
 
-                            <div class="col-sm-12 summary">
+<button id="myBtn" class='btn btn-info btn-lg'>Summary</button>
 
-                                <!-- Trigger the modal with a button -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Summary</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-                                <!-- Modal -->
-                                <div id="myModal" class="modal fade" role="dialog">
+<!-- Modal content -->
+<div class="modal-content">
+<span class="close">x</span>
+{{$lesson->summary}}
+</div>
 
-                                    <div class="modal-dialog">
-
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-
-                                            <!--modal header -->
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Summary of Lesson</h4>
-                                            </div>
-
-                                            <!--modal body -->
-                                            <div class="modal-body">
-
-                                                <div class="container">
-
-                                                    {{$lesson->summary}}
-
-                                                </div> <!--end container -->
-
-                                            </div> <!-- end modal body -->
-
-                                            <!-- Modal content-->
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div> <!--end modal footer -->
-
-                                        </div> <!--end modal content -->
-
-                                    </div> <!--end modal dialog -->
-
-                                </div> <!--end myModal -->
-
-                            </div> <!--end col summary -->
-
-                        </div> <!--end row -->
+</div>
 
                     </div>
                     
