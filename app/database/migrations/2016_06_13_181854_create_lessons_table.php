@@ -19,6 +19,7 @@ class CreateLessonsTable extends Migration {
 			$table->string('link');
 			$table->string('yt_id');
 			$table->string('category');
+			$table->longtext('summary');
 			$table->rememberToken();
 			$table->timestamps();
 		});
