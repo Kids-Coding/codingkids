@@ -75,3 +75,8 @@ textarea {
     text-decoration: none;
     cursor: pointer;
 }
+
+.modal-content{
+    margin-top: 5%;
+    width: 60%;
+}
