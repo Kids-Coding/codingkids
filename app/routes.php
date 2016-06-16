@@ -44,6 +44,15 @@ Route::get('account', 'HomeController@account');
 Route::resource('lessons', 'LessonsController');
 
 
+Route::get('/facebook/login', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk $fb) {
+    $login_link = $fb
+            ->getRedirectLoginHelper()
+            ->getLoginUrl('https://exmaple.com/facebook/callback', ['email', 'user_events']);
+
+    echo '<a href="' . $login_link . '">Log in with Facebook</a>';
+});
+
+
 
 //test thing
 Route::get('orm-test', function ()
