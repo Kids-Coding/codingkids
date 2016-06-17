@@ -15,7 +15,7 @@
 
 Route::get('/', 'HomeController@showIndex');
 
-// Route::get('/', 'HomeController@showWebPage');
+Route::get('/about', 'HomeController@showAbout');
 
 //temp landing page
 // Route::get('/', 'HomeController@showTemp');
@@ -33,20 +33,11 @@ Route::get('/logout', 'HomeController@doLogout');
 Route::get('/signup', 'HomeController@signupForm');
 Route::post('/signup', 'HomeController@doSignup');
 
-//lessons
-// Route::resource('lessons', 'HomeController@lessons');
-// Route::resource('lesson', 'HomeController@lesson');
-
-// Route::resource('lessons', 'LessonsController'); // <----------- ISAAC SAID YOU ARE DOING IT WRONG DO LIKE THIS
-// // P.S. QUIT DICKING AROUND - NICKY
-
 //account
 Route::get('account', 'HomeController@account');
 
 //lessons controller
 Route::resource('lessons', 'LessonsController');
-
-Route::get('/webpage' , 'HomeController@showWebPage');
 
 //test thing
 Route::get('orm-test', function ()
