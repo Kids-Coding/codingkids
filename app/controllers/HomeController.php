@@ -16,9 +16,9 @@ class HomeController extends BaseController {
 	*/
 
 
-	public function showWebPage()
+	public function showAbout()
 	{
-		return View::make('/webpage');
+		return View::make('/about');
 	}
 
 
