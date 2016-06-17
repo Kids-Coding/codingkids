@@ -12,8 +12,10 @@
 */
 
 // actual index page
-// Route::get('/', 'HomeController@showIndex');
-Route::get('/', 'HomeController@showWebPage');
+
+Route::get('/', 'HomeController@showIndex');
+
+// Route::get('/', 'HomeController@showWebPage');
 
 //temp landing page
 // Route::get('/', 'HomeController@showTemp');

@@ -15,10 +15,6 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showTemp()
-	{
-		return View::make('temp');
-	}
 
 	public function showWebPage()
 	{
