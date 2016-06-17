@@ -19,7 +19,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<div class="center">
-			<p class="createdby">Created By:</p>
+			<p class="createdby">Founded By:</p>
 		</div>
 	</div>
 </div>
