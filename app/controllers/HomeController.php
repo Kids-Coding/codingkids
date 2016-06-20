@@ -115,6 +115,7 @@ class HomeController extends BaseController {
 			Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password')));
 			return Redirect::intended('/account');
 		}
+
 	}
 
 

@@ -36,6 +36,7 @@
                     {{ Form::submit('Sign Up!', ['class' => 'btn btn-info form-btn']); }}
                 </div>
             {{ Form::close() }}
+
         </div>
     </div>
 
