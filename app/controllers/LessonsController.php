@@ -13,6 +13,7 @@ class LessonsController extends BaseController {
     public function show($id)
     {
         $lesson = Lesson::find($id);
-        return View::make('lesson.show')->with('lesson', $lesson);
+        $allLessons = DB::table('lessons')->where('category', $lesson->category)->get();
+        return View::make('lesson.show')->with('lesson', $lesson)->with('allLessons', $allLessons);
     }
 }

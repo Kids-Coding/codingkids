@@ -3,9 +3,8 @@
 		<div class="col-md-6 followus col-sm-12">
 			<span class="footer-coding-kids">Coding Kids© </span>
 			Follow Us On: 
-			<span class="fa fa-twitter"></span>
+			<a href="https://twitter.com/codingkidstx"><span class="fa fa-twitter"></span></a>
 			<span class="fa fa-facebook"></span>
-			<span class="fa fa-pinterest"></span>
 		</div>
 		<div class="col-md-6 col-xs-12">
 			<form class="form-inline footer-form">
