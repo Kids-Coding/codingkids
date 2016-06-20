@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>Coding Kids</title>
-    <?php require_once '../mc/src/Mailchimp.php'; ?>
     <link href='https://fonts.googleapis.com/css?family=Lobster|Amatic+SC|Cabin+Sketch:700|Luckiest+Guy|Muli|Roboto+Mono:500|Pacifico|Poppins' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
