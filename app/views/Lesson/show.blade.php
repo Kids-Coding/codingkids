@@ -36,9 +36,18 @@
             </div>
             <div class="col-md-2">
                 <div class="center">
-                    <p>1.lesson html</p>
-                    <p>2.lesson html</p>
-                    <p>3.lesson html</p>
+                    
+
+    <h3>
+        <h3>{{$lesson->category}}</h3>
+            @foreach($allLessons as $individualLesson)
+                <a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a><br>
+            @endforeach
+            <br>
+        
+    </h3>
+
+
                 </div>
             </div>
         </div>
