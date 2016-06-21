@@ -28,7 +28,8 @@ html, body {
 
 footer{
 	background-color: #69DB0E;
-	font-size: 20px; 
+	font-size: 17px; 
+	font-family: 'Voltaire', sans-serif;
 }
 
 .footerinfo{
