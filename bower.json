@@ -1,0 +1,17 @@
+{
+  "name": "ck.dev",
+  "homepage": "https://github.com/Kids-Coding/codingkids",
+  "authors": [
+    "Jerod West <jerod.west@gmail.com>"
+  ],
+  "description": "coding kids",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
