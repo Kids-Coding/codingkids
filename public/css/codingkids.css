@@ -97,7 +97,7 @@ footer{
 }
 
 .mission-col{
-	background-color: #9013FE;
+	background-color:#333333;
 	font-size: 30px;
 	padding-left: 50px;
 	padding-top: 80px;
@@ -123,9 +123,9 @@ footer{
 }
 
 .sign-up-text{
-	font-family: 'Pacifico';
+	font-family: 'Lobster';
 	font-size: 30px;
-	color: #9013fe;
+	color: 	#0000CD;
 }
 
 .login-form{
@@ -149,7 +149,7 @@ footer{
 	font-family: 'Lobster';
 	font-size: 70px;
 	text-align: center;
-	color: #9013fe;
+	color:  	#0000CD;
 }
 
 h3{
@@ -212,8 +212,9 @@ h3{
 	text-align: center;
 	font-family: 'Voltaire', sans-serif;
 	line-height: 40px;
-	background-color: #13FE90;
+	background-color: #062345;
 	height: 350px;
+	color: white;
 }
 
 .whyck{
