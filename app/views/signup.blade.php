@@ -34,6 +34,17 @@
                 </div>
                 <div>
                     {{ Form::submit('Sign Up!', ['class' => 'btn btn-info form-btn']); }}
+                    
+                    {{ Mail::queue('emails.blank', array(
+
+                        'msg' => 'Hey!! Thanks for joining!!'
+
+                        ), function($message)
+                    {
+                        $message->to(Input::get('email'), 'Coding Kids')->subject('Welcome to Coding Kids!!');
+                    });
+                    }}
+
                 </div>
             {{ Form::close() }}
 
