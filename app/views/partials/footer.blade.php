@@ -6,11 +6,6 @@
 			<a href="https://twitter.com/codingkidstx"><span class="fa fa-twitter"></span></a>
 			<span class="fa fa-facebook"></span>
 		</div>
-		<div class="col-md-6 col-xs-12">
-
-            NIKI HAS ONE GIANT BALL
-
-		</div>
 	</div>
 
 	    <script>
