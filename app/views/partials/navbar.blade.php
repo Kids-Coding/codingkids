@@ -18,11 +18,12 @@
           @if(Auth::check())
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, {{{ isset(Auth::user()->studentName) ? Auth::user()->studentName : Auth::user()->username }}}<span class="caret"></span></a>
           @else
+            <li class="nav-links"> <a href="{{{ action('HomeController@showAbout') }}}">About Us</a></li>
             <li class="nav-links"><a href="{{{ action('HomeController@loginForm') }}}">Log In</a></li>
             <li class="nav-links"><a href="{{{ action('HomeController@signupForm') }}}">Sign Up</a></li>
           @endif
+          @if(Auth::check())
           <ul class="dropdown-menu dropdown-nav">
-            @if(Auth::check())
               <li><a href="{{{ action('HomeController@account') }}}">Account</a></li>
               <li><a href="{{{ action('HomeController@doLogout') }}}">Logout</a></li>
             @endif
