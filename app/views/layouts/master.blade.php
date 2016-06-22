@@ -42,7 +42,7 @@
 
             // fakeloader function with options
         $("#fakeloader").fakeLoader({
-            timeToHide:2000, //Time in milliseconds for fakeLoader disappear
+            timeToHide:500, //Time in milliseconds for fakeLoader disappear
             zIndex:"999",//Default zIndex
             spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
             bgColor:"white", //Hex, RGB or RGBA colors
