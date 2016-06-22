@@ -9,7 +9,7 @@
             <div class="col-md-2">
                 <div class="center">
                     <div class="lessonbtn">
-                        <button class="btn btn-info btn-lg" type="button" onclick="window.location='{{url("lessons")}}'">Lesson</button> 
+                        <button class="btn btn-info btn-lg" type="button" onclick="window.location='{{url("lessons")}}'">Go Back</button> 
                     </div>
 
                     <div class="lessonbtn"> 
