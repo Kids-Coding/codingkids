@@ -56,6 +56,8 @@ footer{
 	border: none;
 	border-radius: 0px;
 	margin-bottom: 0px;
+	font-size: 27px;
+	color: black;
 }
 
 .nav-links{
@@ -275,4 +277,8 @@ h3{
 	height: 75px;
 	font-size: 40px;
 	border-radius: 20px
+}
+
+.dropdown-nav{
+	font-size: 23px;
 }
