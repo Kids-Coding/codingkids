@@ -10,13 +10,15 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'html';
         $lesson->yt_id = 'kfchvCyHmsc';
         $lesson->summary = 'lkjhkjh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
 
         $lesson = new Lesson();
         $lesson->name = 'Head and title tags';
         $lesson->category = 'html';
         $lesson->yt_id = 'kqXaRmY7SVA';
-        $lesson->summary = '';
+        $lesson->summary = 'dfadfadfdfadf';
+        $lesson->quiz= 'you pass';
         $lesson->save();
 
         $lesson = new Lesson();
@@ -24,6 +26,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'html';
         $lesson->yt_id = '4ChUhNWug';
         $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
 
         $lesson = new Lesson();
@@ -31,6 +34,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'html';
         $lesson->yt_id = 'kfchvCyHmsc';
         $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
 
         $lesson = new Lesson();
@@ -38,6 +42,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'css';
         $lesson->yt_id = 'VK0kjeqCNu0';
         $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
 
         $lesson = new Lesson();
@@ -45,6 +50,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'css';
         $lesson->yt_id = 'FGXDKrUoVrw';
         $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
 
         $lesson = new Lesson();
@@ -52,6 +58,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'css';
         $lesson->yt_id = 'FGXDKrUoVrw';
         $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
 
         $lesson = new Lesson();
@@ -59,6 +66,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'css';
         $lesson->yt_id = 'kfchvCyHmsc';
         $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
     
         $lesson = new Lesson();
@@ -66,13 +74,15 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'php';
         $lesson->yt_id = '8HlqSrCazqo';
         $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
 
         $lesson = new Lesson();
         $lesson->name = 'lesson2';
         $lesson->category = 'php';
         $lesson->yt_id = '8HlqSrCazqo';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summaryyou pass = 'lkjsdfhkljsadh';
+        $lesson->quiz= '';
         $lesson->save();
 
         $lesson = new Lesson();
@@ -80,6 +90,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'php';
         $lesson->yt_id = '8HlqSrCazqo';
         $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
 
         $lesson = new Lesson();
@@ -87,6 +98,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->category = 'php';
         $lesson->yt_id = 'kfchvCyHmsc';
         $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->quiz= 'you pass';
         $lesson->save();
     }
 
