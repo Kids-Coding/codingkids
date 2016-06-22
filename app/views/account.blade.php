@@ -5,7 +5,7 @@
 <p class="titles">Hello, {{{ isset(Auth::user()->studentName) ? Auth::user()->studentName : Auth::user()->username }}} </p>
 
 <div class="row">
-	<div class="col-xs-6 col-xs-offset-1">
+	<div class="col-md-6 col-md-offset-1 col-xs-8 col-xs-offset-1">
 		<h3 id="HTML_progress" class="progbar">HTML Progress</h3>
 		<div class="progress">
 			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%
@@ -23,10 +23,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-xs-offset-2 col-xs-3">
+	<div class="col-md-offset-2 col-md-3 col-xs-8 col-xs-offset-1">
 		<div class="account-side">
-			<div><a href="/lessons">Go To Lessons</a></div>
-			<div><a href="#">Delete Account</a></div>
+			<div><a class="btn btn-info lesson-btn" href="/lessons">Go To Lessons</a></div>
 		</div>
 	</div>
 </div>
