@@ -9,7 +9,7 @@
         <div class="col-md-6">
             <div class="signup-form">
                 <p class="sign-up-text">Sign Up</p>
-                <p> It's always free and always will be.</p>
+                <p class="alwaysfree"> It's always free and always will be.</p>
             </div>
                 {{ Form::open(array('action' => 'HomeController@doSignup', 'class' => 'form')) }}
                 <div class="row">

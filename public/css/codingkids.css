@@ -123,11 +123,12 @@ footer{
 .signup{
 	background-color: #E9EAEA;
 	height: 100%;
+	margin-bottom: 100px;
 }
 
 .sign-up-text{
 	font-family: 'Lobster';
-	font-size: 30px;
+	font-size: 50px;
 	color: #800EDB;
 }
 
@@ -300,4 +301,8 @@ h3{
 .progress-bar{
 	font-size: 35px;
 	padding-top: 25px;
+}
+
+.alwaysfree{
+	font-size: 25px;
 }
