@@ -42,11 +42,11 @@
 
             // fakeloader function with options
         $("#fakeloader").fakeLoader({
-            timeToHide:6000, //Time in milliseconds for fakeLoader disappear
+            timeToHide:2000, //Time in milliseconds for fakeLoader disappear
             zIndex:"999",//Default zIndex
             spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-            bgColor:"#2ecc71", //Hex, RGB or RGBA colors
-            imagePath:"/img/cholo.jpg" //If you want can you insert your custom image
+            bgColor:"white", //Hex, RGB or RGBA colors
+            imagePath:"../img/coding-kids.png" //If you want can you insert your custom image
         });
 
         var konami_keys = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
