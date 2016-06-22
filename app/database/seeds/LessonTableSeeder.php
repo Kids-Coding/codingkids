@@ -34,9 +34,9 @@ class LessonTableSeeder extends Seeder {
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->name = 'lesson1';
+        $lesson->name = 'Beginning CSS';
         $lesson->category = 'css';
-        $lesson->yt_id = 'FGXDKrUoVrw';
+        $lesson->yt_id = 'VK0kjeqCNu0';
         $lesson->summary = 'lkjsdfhkljsadh';
         $lesson->save();
 

@@ -113,7 +113,27 @@ class HomeController extends BaseController {
 		    $user->save();
 			Session::flash('successMessage', 'Welcome ' . $user->childName . '! Your account has been successfully created.');
 			Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password')));
+			
+			Mail::send('emails.blank', array(
+
+                        'msg' => 'Hey!! Thanks for joining!!'
+
+                        ), function($message)
+                    {
+                        $message->to(Input::get('email'), 'Coding Kids')->subject('Welcome to Coding Kids SUBJECT!!');
+                    });
+
+			$userdata = array(
+				'username' => Input::get('username'),
+				'password' => Input::get('password')
+			);
+			if (Auth::attempt($userdata))
+		{
+			Session::flash('successMessage', 'Login successful');
+		}
+			
 			return Redirect::intended('/account');
+
 		}
 
 	}
@@ -126,4 +146,6 @@ class HomeController extends BaseController {
 		Session::flash('successMessage', 'Your account was successfully deleted.');
 		return Redirect::intended('/');
 	}
+
+
 }
