@@ -25,7 +25,15 @@
                     </div>
                     
                     <div class="lessonbtn">
-                        <button class="btn btn-info btn-lg" type="button">Quiz</button>  
+                        <button class="btn btn-info btn-lg" type="button">Quiz</button> 
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    {{$lesson->quiz}}
+                                    <span class="close">x</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
