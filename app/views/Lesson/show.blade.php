@@ -58,7 +58,8 @@
                     <h3>
                         <h3>{{$lesson->category}}</h3>
                         @foreach($allLessons as $individualLesson)
-                        <a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a><br>
+                            <button class="videoLesson btn btn-info btn-lg"><a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a></button>
+                            <br>
                         @endforeach
                         <br>  
                     </h3>
