@@ -9,7 +9,7 @@
             <button type="button" class="btn btn-info btn-lg dropdown-toggle lessons-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HTML <span class="caret"></span></button>
             <ul class="dropdown-menu">
             @foreach ($lessons as $lesson)
-                @if ($lesson->category == 'html')
+                @if ($lesson->category == 'HTML')
                     <li><a class="lessonsstuff" href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->name}}</a></li>
                 @endif
             @endforeach
@@ -21,7 +21,7 @@
             <button type="button" class="btn btn-info btn-lg dropdown-toggle lessons-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CSS <span class="caret"></span></button>
             <ul class="dropdown-menu">
             @foreach ($lessons as $lesson)
-                @if ($lesson->category == 'css')
+                @if ($lesson->category == 'CSS')
                     <li><a class="lessonsstuff" href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->name}}</a></li>
                 @endif
             @endforeach
@@ -33,7 +33,7 @@
             <button type="button" class="btn btn-info btn-lg dropdown-toggle lessons-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PHP <span class="caret"></span></button>
             <ul class="dropdown-menu">
             @foreach ($lessons as $lesson)
-                @if ($lesson->category == 'php')
+                @if ($lesson->category == 'PHP')
                     <li><a class="lessonsstuff" href="{{action('LessonsController@show', $lesson->id)}}">{{$lesson->name}}</a></li>
                 @endif
             @endforeach
