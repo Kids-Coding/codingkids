@@ -6,7 +6,7 @@ class LessonTableSeeder extends Seeder {
     {
 
         $lesson = new Lesson();
-        $lesson->name = 'lesson1';
+        $lesson->name = 'Welcome to HTML!!';
         $lesson->category = 'html';
         $lesson->yt_id = 'kfchvCyHmsc';
         $lesson->summary = 'lkjhkjh';
@@ -30,7 +30,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->name = 'lesson4';
+        $lesson->name = 'Something cool...';
         $lesson->category = 'html';
         $lesson->yt_id = 'kfchvCyHmsc';
         $lesson->summary = 'lkjsdfhkljsadh';
@@ -46,7 +46,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->name = 'lesson2';
+        $lesson->name = 'Other CSS Tricks';
         $lesson->category = 'css';
         $lesson->yt_id = 'FGXDKrUoVrw';
         $lesson->summary = 'lkjsdfhkljsadh';
@@ -54,7 +54,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->name = 'lesson3';
+        $lesson->name = 'External CSS';
         $lesson->category = 'css';
         $lesson->yt_id = 'FGXDKrUoVrw';
         $lesson->summary = 'lkjsdfhkljsadh';
@@ -62,7 +62,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->name = 'lesson4';
+        $lesson->name = 'CSS Can Be Fun!!';
         $lesson->category = 'css';
         $lesson->yt_id = 'kfchvCyHmsc';
         $lesson->summary = 'lkjsdfhkljsadh';
@@ -70,7 +70,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->save();
     
         $lesson = new Lesson();
-        $lesson->name = 'lesson1';
+        $lesson->name = 'What is PHP?';
         $lesson->category = 'php';
         $lesson->yt_id = '8HlqSrCazqo';
         $lesson->summary = 'lkjsdfhkljsadh';
@@ -78,7 +78,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->name = 'lesson2';
+        $lesson->name = 'Easy PHP Practice';
         $lesson->category = 'php';
         $lesson->yt_id = '8HlqSrCazqo';
         $lesson->summary = 'lkjsdfhkljsadh';
@@ -86,7 +86,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->name = 'lesson3';
+        $lesson->name = 'Another Thing';
         $lesson->category = 'php';
         $lesson->yt_id = '8HlqSrCazqo';
         $lesson->summary = 'lkjsdfhkljsadh';
@@ -94,7 +94,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->save();
 
         $lesson = new Lesson();
-        $lesson->name = 'lesson4';
+        $lesson->name = 'PHP Forever!!';
         $lesson->category = 'php';
         $lesson->yt_id = 'kfchvCyHmsc';
         $lesson->summary = 'lkjsdfhkljsadh';
