@@ -42,7 +42,6 @@ textarea {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -86,8 +85,31 @@ textarea {
 .videoLesson {
     width: 200px;
     text-align: left;
-
 }
+
+/* editor/view/tryit-btn */
+.editor {
+    margin-left: -55px;
+}
+#editor {
+    height: 400px;
+    width: 635px;
+}
+
+.tryit {
+    margin-left: 55px;
+}
+
+.view {
+    margin-left: -45px;
+}
+
+#view {
+    height: 400px;
+    width: 610px;
+}
+
+
 
 
 

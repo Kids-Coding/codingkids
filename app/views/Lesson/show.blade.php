@@ -1,7 +1,5 @@
 @extends('layouts.lesson')
 
-<script src="../js/showPage.js"></script>
-
 @section('content')
 
     <div class="container">
@@ -18,8 +16,8 @@
 
                         <!--div containing the a .btn "summary", that has a modal in which the summary to the lesson will reside-->
                     <div class="lessonbtn"> 
-                        <button id="myBtn" class='btn btn-info btn-lg'>Summary</button>
-                        <div id="myModal" class="modal">
+                        <button id="myBtn" class='btn btn-info btn-lg' data-toggle="modal" data-target="#summary">Summary</button>
+                        <div id="summary" class="modal">
                             <div class="modal-content">
                                 <div class="modal-body">
                                     <span class="close">x</span>
@@ -30,17 +28,31 @@
                     </div><!--end .lessonbtn-->
                     
                         <!--div containing the a .btn "quiz", that has a modal in which the quiz to the lesson will reside-->
+                    <!-- Trigger the modal with a button -->
                     <div class="lessonbtn">
-                        <button class="btn btn-info btn-lg">Quiz</button> 
-                        <div id="myModal" class="modal">
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#quiz">Quiz</button>
+                    </div>
+                    <!-- Modal -->
+                    <div id="quiz" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
                             <div class="modal-content">
+                                <!--modal header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Quiz</h4>
+                                </div>
+                                <!--modal body -->
                                 <div class="modal-body">
-                                    {{$lesson->quiz}}
-                                    <span class="close">x</span>
-                                </div><!--end .modal-body-->
-                            </div><!--end .modal-content-->
-                        </div><!--end #mymodal-->
-                    </div><!--end .lessonbtn-->
+                                   {{$lesson->quiz}}
+                                </div> <!-- end modal body -->
+                                <!-- Modal content-->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                                </div> <!--end modal footer -->
+                            </div> <!--end modal content -->
+                        </div> <!--end modal dialog -->
+                    </div> <!--end myModal -->
+                   
 
                 </div><!--end .center-->
             </div><!--end .col-->
@@ -75,18 +87,18 @@
             <!--div that contains a text area that you can write out text/html/css within-->
             <div class="center">
 
-                <div class="col-md-5">
+                <div class="editor col-md-5">
                     Editor:<br>
                     <textarea id="editor"></textarea>
                 </div> <!-- end .col -->
 
                     <!-- div that contains a btn that will allow you to transfer text/html/css from the #editor to the #view -->
                 <div class="col-md-2">
-                    <button class="btn btn-lg btn-info tryme" type="button" onclick="codingKids()">Try it</button> 
+                    <button class="btn btn-lg btn-info tryit" type="button" onclick="codingKids()">Try it</button> 
                 </div> <!-- end .col -->
 
                     <!--div that contains an empty div that will be used to place the text/html/css once transferred over from the #editor-->
-                <div class="col-md-5">
+                <div class="view col-md-5">
                     View:<br>
                     <div id="view">
                     </div><!--end #view-->
