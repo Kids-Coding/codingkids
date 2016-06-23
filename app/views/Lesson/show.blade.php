@@ -9,23 +9,34 @@
             <div class="col-md-2">
                 <div class="center">
 
-                        <!--div containing a .btn "goback", that will take user back to lessons.blade-->
+                    <!--div containing a .btn "goback", that will take user back to lessons.blade-->
                     <div class="lessonbtn">
                         <button class="btn btn-info btn-lg" type="button" onclick="window.location='{{url("lessons")}}'">Go Back</button> 
                     </div><!--end .lessonbtn-->
 
                         <!--div containing the a .btn "summary", that has a modal in which the summary to the lesson will reside-->
-                    <div class="lessonbtn"> 
-                        <button id="myBtn" class='btn btn-info btn-lg' data-toggle="modal" data-target="#summary">Summary</button>
-                        <div id="summary" class="modal">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <span class="close">x</span>
-                                    {{$lesson->summary}}
-                                </div><!--end .modal-body-->
-                            </div><!--end .modal=content-->
-                        </div><!--end #mymodal-->
-                    </div><!--end .lessonbtn-->
+                        <div class="lessonbtn"> 
+                            <button type = 'button' class='btn btn-info btn-lg' data-toggle="modal" data-target="#summary">Summary</button>
+                            <div id="summary" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <!--modal header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Quiz</h4>
+                                        </div>
+                                        <!--modal body -->
+                                        <div class="modal-body">
+                                        {{$lesson->quiz}}
+                                        </div> <!-- end modal body -->
+                                        <!-- Modal content-->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                                        </div> <!--end modal footer -->
+                                    </div> <!--end modal content -->
+                                </div> <!--end modal dialog -->
+                            </div> <!--end myModal -->
+                        </div><!--end .lessonbtn-->
                     
                         <!--div containing the a .btn "quiz", that has a modal in which the quiz to the lesson will reside-->
                     <!-- Trigger the modal with a button -->
