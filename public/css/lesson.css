@@ -76,7 +76,23 @@ textarea {
     cursor: pointer;
 }
 
-.modal-content{
+.modal-content {
     margin-top: 5%;
     width: 60%;
 }
+
+
+/* videoLesson */
+.videoLesson {
+    width: 200px;
+    text-align: left;
+
+}
+
+
+
+
+
+
+
+
