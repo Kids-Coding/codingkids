@@ -8,14 +8,36 @@
 
             <div class="col-md-2">
                 <div class="center">
+                    <h3>
+                        <h3>{{$lesson->category}}</h3>
+                        @foreach($allLessons as $individualLesson)
+                            <button class="videoLesson btn btn-info btn-lg"><a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a></button>
+                            <br>
+                        @endforeach
+                        <br>  
+                    </h3>
+                </div><!--end .center-->
+            </div><!--end .col-->
 
+                <!--div containing the youtube video player that will have teh video lesson on it -->
+            <div class="col-md-8">
+                <div class='center'>
+                    <div id='player'></div>
+                </div><!--end .center-->
+            </div><!--end .col-->
+
+            <div class="col-md-2">
+                <div class="center">
+
+                    <h3>8====D</h3>
+                    
                     <!--div containing a .btn "goback", that will take user back to lessons.blade-->
-                    <div class="lessonbtn">
+                    <div class="videoLesson">
                         <button class="btn btn-info btn-lg" type="button" onclick="window.location='{{url("lessons")}}'">Go Back</button> 
-                    </div><!--end .lessonbtn-->
+                    </div><!--end .videoLesson-->
 
                         <!--div containing the a .btn "summary", that has a modal in which the summary to the lesson will reside-->
-                        <div class="lessonbtn"> 
+                        <div class="videoLesson"> 
                             <button type = 'button' class='btn btn-info btn-lg' data-toggle="modal" data-target="#summary">Summary</button>
                             <div id="summary" class="modal fade" role="dialog">
                                 <div class="modal-dialog">
@@ -36,11 +58,11 @@
                                     </div> <!--end modal content -->
                                 </div> <!--end modal dialog -->
                             </div> <!--end myModal -->
-                        </div><!--end .lessonbtn-->
+                        </div><!--end .videoLesson-->
                     
                         <!--div containing the a .btn "quiz", that has a modal in which the quiz to the lesson will reside-->
                     <!-- Trigger the modal with a button -->
-                    <div class="lessonbtn">
+                    <div class="videoLesson">
                         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#quiz">Quiz</button>
                     </div>
                     <!-- Modal -->
@@ -65,27 +87,6 @@
                     </div> <!--end myModal -->
                    
 
-                </div><!--end .center-->
-            </div><!--end .col-->
-
-                <!--div containing the youtube video player that will have teh video lesson on it -->
-            <div class="col-md-8">
-                <div class='center'>
-                    <div id='player'></div>
-                </div><!--end .center-->
-            </div><!--end .col-->
-
-
-            <div class="col-md-2">
-                <div class="center">
-                    <h3>
-                        <h3>{{$lesson->category}}</h3>
-                        @foreach($allLessons as $individualLesson)
-                            <button class="videoLesson btn btn-info btn-lg"><a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a></button>
-                            <br>
-                        @endforeach
-                        <br>  
-                    </h3>
                 </div><!--end .center-->
             </div><!--end .col-->
 
