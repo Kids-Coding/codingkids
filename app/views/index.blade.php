@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div id="fakeloader"></div> 
+{{-- <div id="fakeloader"></div>  --}}
 
 <div class="vide"
   	data-vide-bg="../video/codingkids.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
