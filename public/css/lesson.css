@@ -89,3 +89,10 @@ textarea {
     width: 225px;
     height: 60px;
 }
+
+.lessoncategory{
+    font-family: 'Chewy', cursive;
+    text-align: left;
+    font-size: 60px;
+    color: #c6615a;
+}
