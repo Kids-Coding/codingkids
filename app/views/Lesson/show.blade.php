@@ -43,7 +43,7 @@
                         <!--div containing the a .btn "quiz", that has a modal in which the quiz to the lesson will reside-->
                     <!-- Trigger the modal with a button -->
                     <div class="lessonbtn">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#quiz">Quiz</button>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#quiz">Qui</button>
                     </div>
                     <!-- Modal -->
                     <div id="quiz" class="modal fade" role="dialog">

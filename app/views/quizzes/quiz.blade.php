@@ -41,7 +41,7 @@
             
             <p>2. What version of the HTML Standard do we use in our lesson?</p>
             <form>
-              <input type="radio" name="html1" value="v3"> Version 3<br>
+              <input type="radio" name="html1" value="v3"> Version 2<br>
               <input type="radio" name="html1" value="v4"> Version 4<br>
               <input type="radio" name="html1" value="v5"> Version 5<br>
               <input type="radio" name="html1" value="v6"> Version 6
