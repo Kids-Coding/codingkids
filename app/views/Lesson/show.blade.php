@@ -12,7 +12,7 @@
                     <img class="lessonimg" src="../img/coding-kids.png">
 
                         <!--div containing a .btn "goback", that will take user back to lessons.blade-->
-                    <div class="lessonbtn">
+                    <div class="lessonbtn one">
                         <button class="videoLesson btn btn-default btn-lg" type="button" onclick="window.location='{{url("lessons")}}'">Go Back</button> 
                     </div><!--end .lessonbtn-->
 
@@ -83,8 +83,9 @@
 
             <div class="col-md-2 forvideo">
                 <div class="center">
-                        <h3>{{$lesson->category}}</h3>
+                        <p class="lessonTitle">{{$lesson->category}}</p>
                         <div>
+                            <p>Click for next video</p>
                         @foreach($allLessons as $individualLesson)
                             <button class="videoLesson btn btn-default btn-lg"><a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a></button>
                             <br><br>
