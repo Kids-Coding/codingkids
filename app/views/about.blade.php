@@ -37,7 +37,7 @@
         <div class="col-md-4">
             <img src="../img/niki.png" height="300">
             <div class="names">Nicolette Williams</div>
-            <div class="aboutfounders">I'm Niki!</div>
+            <div class="aboutfounders">I'm Niki! I'm a web designer and developer. I love working with startups and enjoy the challenges of crafting beautiful and intuitive experiences out of seemingly complex interactions. However, the things I am most proud of aren't produced in code or Photoshop. I live in Texas with my two beautiful children, a boy, and a girl. And of course my awesome husband.</div>
         </div>
     </div>
 </div>
