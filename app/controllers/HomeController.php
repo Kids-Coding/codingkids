@@ -120,7 +120,7 @@ class HomeController extends BaseController {
 
                         ), function($message)
                     {
-                        $message->to(Input::get('email'), 'Coding Kids')->subject('Welcome to Coding Kids SUBJECT!!');
+                        $message->to(Input::get('email'), 'Coding Kids')->subject('From Coding Kids!!');
                     });
 
 			$userdata = array(
