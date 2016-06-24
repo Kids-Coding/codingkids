@@ -63,7 +63,9 @@
                                 </div> <!-- end modal body -->
                                 <!-- Modal content-->
                                 <div class="modal-footer">
-                                    <!-- stuff goes here in the near future if needed -->
+                                    <h5>    
+                                        Thank You <h4>{{ isset(Auth::user()->studentName) ? Auth::user()->studentName : Auth::user()->username }}</h4>
+                                    </h5>
                                 </div> <!--end modal footer -->
                             </div> <!--end modal content -->
                         </div> <!--end modal dialog -->
