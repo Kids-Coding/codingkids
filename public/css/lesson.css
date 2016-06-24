@@ -20,6 +20,20 @@ textarea {
     margin-top: 175px;
     background-color: #ce95c8;
 }
+    /* quiz modal */
+#quiz {
+    margin-left: 300px;
+    width: 700px;
+    height: auto;
+}
+
+.modal-footer h4 {
+    font-family: 'Lobster';
+}
+
+.quizcontain {
+    margin-left: -70px;
+}
 
 #view{
     height: 350px;
@@ -43,7 +57,7 @@ textarea {
     border-radius: 10px;
 }
 
-/* The Close Button */
+    /* The Close Button */
 .close {
     color: #aaa;
     float: right;
@@ -58,7 +72,7 @@ textarea {
     cursor: pointer;
 }
 
-/* foreach / video */
+    /* foreach / video */
 .videoLesson {
     width: 200px;
     text-align: center;
@@ -68,7 +82,7 @@ textarea {
     margin-left: -50px;
 }
 
-/* codingkids logo */
+    /* codingkids logo */
 .lessonimg{
     width: 215px;
     height: 150px;

@@ -1,6 +1,6 @@
 
 
-<div class="container">
+<div class="container quizcontain">
 
     <div class="row">
 
