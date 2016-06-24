@@ -16,7 +16,7 @@ textarea {
     color: #9efc7d;
 }
 
-.tryme {
+.tryit {
     margin-top: 175px;
     background-color: #ce95c8;
     color: #fff07a;
@@ -81,7 +81,7 @@ textarea {
 }
 
 
-/* videoLesson */
+/* foreach videoLesson */
 .videoLesson {
     width: 200px;
     text-align: left;
@@ -109,6 +109,10 @@ textarea {
     width: 610px;
 }
 
+/* foreach lesson */
+.forvideo {
+
+}
 
 
 
