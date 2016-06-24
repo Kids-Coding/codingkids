@@ -37,7 +37,7 @@
         <div class="col-md-4">
             <img src="../img/niki.png" height="300">
             <div class="names">Nicolette Williams</div>
-            <div class="aboutfounders">dl;sahg;kdjsh;as dkgasdlkhf;asldk asd;kjahsd;kasbd;gkjasdh;fkajshdf ;aksjdhg;kajsdf;kajshdf;kasjdhf;k a;kjsdhg;ak jsdhf;kajsdfkajds s;dkjfhgas;dkj ghakdsghaskdjg a;skdjfh;skdjgh;aksdjhg;askdj ;aksdjhg;askdjhg;aksjdhg;askjd ;askdjgha;skdhg;kaj sdhg;ajk ;kfdjhg;akjsdhf ;aksjdf asdjfh;asdkhg;asdlk jgasdlk a;ksdjhg;kasdh;</div>
+            <div class="aboutfounders">I'm Niki!</div>
         </div>
     </div>
 </div>
