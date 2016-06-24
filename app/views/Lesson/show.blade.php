@@ -83,7 +83,9 @@
 
             <div class="col-md-2 forvideo">
                 <div class="center">
+                    
                         <p class="lessonTitle">{{$lesson->category}}</p>
+
                         <div>
                             <p>Click for next video</p>
                         @foreach($allLessons as $individualLesson)
