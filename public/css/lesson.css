@@ -21,6 +21,11 @@ textarea {
     background-color: #ce95c8;
 }
     /* quiz modal */
+
+.kid {
+    margin-top: 155px;
+}
+
 #quiz {
     margin-left: 300px;
     width: 700px;
@@ -73,11 +78,16 @@ textarea {
 }
 
     /* foreach / video */
+.close {
+    float: right;
+}
+
 .videoLesson {
     width: 200px;
     text-align: center;
     color: #337AB7;
 }
+
 .forvideo {
     margin-left: -50px;
 }

@@ -4,13 +4,8 @@
 
     <div class="row">
 
-        <!-- title -->
-        <div class="col-sm-5 col-sm-offset-1">
-            <h1>Html Quiz 1</h1>
-        </div> <!-- end col/title -->
-
         <!-- instructions -->
-        <div class="col-sm-6 col-sm-offset-1"> 
+        <div class="col-sm-5 col-sm-offset-1"> 
             <p>
                 "Click" on the space next to the answer(s).<br>
                 When you have completed all the questions "click" submit.
@@ -22,7 +17,7 @@
     <div class="row">
 
         <!-- image -->
-        <div class="col-sm-1 col-sm-offset-1">
+        <div class="kid col-sm-1 col-sm-offset-1">
                 <img src="/img/quiz-kid.png">
         </div> <!-- end col -->
 
