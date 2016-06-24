@@ -9,14 +9,16 @@
             <div class="col-md-2">
                 <div class="center">
 
+                    <img class="lessonimg" src="../img/coding-kids.png">
+
                         <!--div containing a .btn "goback", that will take user back to lessons.blade-->
                     <div class="lessonbtn">
-                        <button class="btn btn-info btn-lg" type="button" onclick="window.location='{{url("lessons")}}'">Go Back</button> 
+                        <button class="videoLesson btn btn-default btn-lg" type="button" onclick="window.location='{{url("lessons")}}'">Go Back</button> 
                     </div><!--end .lessonbtn-->
 
                         <!--div containing the a .btn "summary", that has a modal in which the summary to the lesson will reside-->
                     <div class="lessonbtn">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#summary">Summary</button>
+                        <button type="button" class="videoLesson btn btn-default btn-lg" data-toggle="modal" data-target="#summary">Summary</button>
                     </div>
                     <!-- Modal -->
                     <div id="summary" class="modal fade" role="dialog">
@@ -43,7 +45,7 @@
                         <!--div containing the a .btn "quiz", that has a modal in which the quiz to the lesson will reside-->
                     <!-- Trigger the modal with a button -->
                     <div class="lessonbtn">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#quiz">Qui</button>
+                        <button type="button" class="videoLesson btn btn-default btn-lg" data-toggle="modal" data-target="#quiz">Quiz</button>
                     </div>
                     <!-- Modal -->
                     <div id="quiz" class="modal fade" role="dialog">
@@ -83,10 +85,14 @@
                 <div class="center">
                     <h3>
                         <h3>{{$lesson->category}}</h3>
+                        <div class="lessonbtn">
                         @foreach($allLessons as $individualLesson)
-                            <button class="videoLesson btn btn-info btn-lg"><a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a></button>
+                            <button class="videoLesson btn btn-default btn-lg"><a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a></button>
                             <br><br>
                         @endforeach
+                        </div>
+
+
                         <br>  
                     </h3>
                 </div><!--end .center-->
@@ -102,18 +108,16 @@
             <div class="center">
 
                 <div class="editor col-md-5">
-                    Editor:<br>
                     <textarea id="editor"></textarea>
                 </div> <!-- end .col -->
 
                     <!-- div that contains a btn that will allow you to transfer text/html/css from the #editor to the #view -->
                 <div class="col-md-2">
-                    <button class="btn btn-lg btn-info tryit" type="button" onclick="codingKids()">Try it</button> 
+                    <button class="btn btn-lg btn-default tryit" type="button" onclick="codingKids()">Try it</button> 
                 </div> <!-- end .col -->
 
                     <!--div that contains an empty div that will be used to place the text/html/css once transferred over from the #editor-->
                 <div class="view col-md-5">
-                    View:<br>
                     <div id="view">
                     </div><!--end #view-->
                 </div> <!-- end .col -->
