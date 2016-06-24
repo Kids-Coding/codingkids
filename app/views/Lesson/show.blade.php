@@ -15,17 +15,30 @@
                     </div><!--end .lessonbtn-->
 
                         <!--div containing the a .btn "summary", that has a modal in which the summary to the lesson will reside-->
-                    <div class="lessonbtn"> 
-                        <button id="myBtn" class='btn btn-info btn-lg' data-toggle="modal" data-target="#summary">Summary</button>
-                        <div id="summary" class="modal">
+                    <div class="lessonbtn">
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#summary">Summary</button>
+                    </div>
+                    <!-- Modal -->
+                    <div id="summary" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
                             <div class="modal-content">
+                                <!--modal header -->
+                                <div class="modal-header">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                                    <h4 class="modal-title">Summary</h4>
+                                </div>
+                                <!--modal body -->
                                 <div class="modal-body">
-                                    <span class="close">x</span>
-                                    {{$lesson->summary}}
-                                </div><!--end .modal-body-->
-                            </div><!--end .modal=content-->
-                        </div><!--end #mymodal-->
-                    </div><!--end .lessonbtn-->
+                                   {{$lesson->summary}}
+                                </div> <!-- end modal body -->
+                                <!-- Modal content-->
+                                <div class="modal-footer">
+                                    <!-- stuff goes here in near future -->
+                                </div> <!--end modal footer -->
+                            </div> <!--end modal content -->
+                        </div> <!--end modal dialog -->
+                    </div> <!--end myModal -->
                     
                         <!--div containing the a .btn "quiz", that has a modal in which the quiz to the lesson will reside-->
                     <!-- Trigger the modal with a button -->
@@ -39,15 +52,16 @@
                             <div class="modal-content">
                                 <!--modal header -->
                                 <div class="modal-header">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
                                     <h4 class="modal-title">Quiz</h4>
                                 </div>
                                 <!--modal body -->
                                 <div class="modal-body">
-                                   {{$lesson->quiz}}
+                                   @include($lesson->quiz)
                                 </div> <!-- end modal body -->
                                 <!-- Modal content-->
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+                                    <!-- stuff goes here in the near future if needed -->
                                 </div> <!--end modal footer -->
                             </div> <!--end modal content -->
                         </div> <!--end modal dialog -->
@@ -65,13 +79,13 @@
             </div><!--end .col-->
 
 
-            <div class="col-md-2">
+            <div class="col-md-2 forvideo">
                 <div class="center">
                     <h3>
                         <h3>{{$lesson->category}}</h3>
                         @foreach($allLessons as $individualLesson)
                             <button class="videoLesson btn btn-info btn-lg"><a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a></button>
-                            <br>
+                            <br><br>
                         @endforeach
                         <br>  
                     </h3>
