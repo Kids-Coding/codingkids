@@ -54,8 +54,8 @@
                             <div class="modal-content">
                                 <!--modal header -->
                                 <div class="modal-header">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
-                                    <h4 class="modal-title">Quiz</h4>
+                                    <button type="button" class="close btn btn-default" data-dismiss="modal">X</button>
+                                    <h4 class="modal-title">{{$lesson->name}}</h4>
                                 </div>
                                 <!--modal body -->
                                 <div class="modal-body">
