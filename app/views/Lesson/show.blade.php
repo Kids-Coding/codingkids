@@ -83,18 +83,14 @@
 
             <div class="col-md-2 forvideo">
                 <div class="center">
-                    <h3>
                         <h3>{{$lesson->category}}</h3>
-                        <div class="lessonbtn">
+                        <div>
                         @foreach($allLessons as $individualLesson)
                             <button class="videoLesson btn btn-default btn-lg"><a href="{{action('LessonsController@show', $individualLesson->id)}}">{{{$individualLesson->name}}}</a></button>
                             <br><br>
                         @endforeach
                         </div>
 
-
-                        <br>  
-                    </h3>
                 </div><!--end .center-->
             </div><!--end .col-->
 
