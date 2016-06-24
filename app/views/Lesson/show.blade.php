@@ -32,7 +32,7 @@
                                 </div>
                                 <!--modal body -->
                                 <div class="modal-body">
-                                   {{$lesson->summary}}
+                                   @include($lesson->summary)
                                 </div> <!-- end modal body -->
                                 <!-- Modal content-->
                                 <div class="modal-footer">

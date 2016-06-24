@@ -9,7 +9,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'Welcome to HTML!!';
         $lesson->category = 'HTML';
         $lesson->yt_id = 'kfchvCyHmsc';
-        $lesson->summary = 'lkjhkjh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -17,7 +17,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'Head and title tags';
         $lesson->category = 'HTML';
         $lesson->yt_id = 'kqXaRmY7SVA';
-        $lesson->summary = 'dfadfadfdfadf';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -25,7 +25,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'Body Tags and More!!';
         $lesson->category = 'HTML';
         $lesson->yt_id = '4ChUhNWug';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -33,7 +33,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'Something cool...';
         $lesson->category = 'HTML';
         $lesson->yt_id = 'kfchvCyHmsc';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -41,7 +41,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'Beginning CSS';
         $lesson->category = 'CSS';
         $lesson->yt_id = 'VK0kjeqCNu0';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -49,7 +49,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'Other CSS Tricks';
         $lesson->category = 'CSS';
         $lesson->yt_id = 'FGXDKrUoVrw';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -57,7 +57,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'External CSS';
         $lesson->category = 'CSS';
         $lesson->yt_id = 'FGXDKrUoVrw';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -65,7 +65,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'CSS Can Be Fun!!';
         $lesson->category = 'CSS';
         $lesson->yt_id = 'kfchvCyHmsc';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
     
@@ -73,7 +73,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'What is PHP?';
         $lesson->category = 'PHP';
         $lesson->yt_id = '8HlqSrCazqo';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -81,7 +81,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'Easy PHP Practice';
         $lesson->category = 'PHP';
         $lesson->yt_id = '8HlqSrCazqo';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -89,7 +89,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'Another Thing';
         $lesson->category = 'PHP';
         $lesson->yt_id = '8HlqSrCazqo';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
 
@@ -97,7 +97,7 @@ class LessonTableSeeder extends Seeder {
         $lesson->name = 'PHP Forever!!';
         $lesson->category = 'PHP';
         $lesson->yt_id = 'kfchvCyHmsc';
-        $lesson->summary = 'lkjsdfhkljsadh';
+        $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
     }
