@@ -1,5 +1,5 @@
 body {
-    background-color: #5abfc6;
+    background-color: #D9F5FF;
     height: 100%;
 }
 
@@ -26,11 +26,16 @@ textarea {
     width: 450px;
     border: inset;
     background-color: white;
+    text-align: left;
 }
 
 .lessonbtn{
-    padding-top: 35px;
+    padding-top: 15px;
     text-align: center;
+}
+
+.one {
+    margin-top: -15px;
 }
 
 #editor, #view{
@@ -53,46 +58,26 @@ textarea {
     cursor: pointer;
 }
 
-/* foreach videoLesson */
+/* foreach / video */
 .videoLesson {
     width: 200px;
     text-align: center;
     color: #337AB7;
 }
-
-/* editor/view/tryit-btn */
-.editor {
-    margin-left: -55px;
-}
-#editor {
-    height: 400px;
-    width: 635px;
+.forvideo {
+    margin-left: -50px;
 }
 
-.tryit {
-    text-align: center;
-    color: #337AB7;
-    margin-top: 0px;
-    position: static;
-}
-
-.view {
-    margin-left: -45px;
-}
-
-#view {
-    height: 400px;
-    width: 610px;
-}
-
+/* codingkids logo */
 .lessonimg{
-    width: 225px;
-    height: 60px;
+    width: 215px;
+    height: 150px;
 }
 
-.lessoncategory{
-    font-family: 'Chewy', cursive;
-    text-align: left;
-    font-size: 60px;
-    color: #c6615a;
+.lessonTitle{
+    font-size: 25px;
+    font-family: lobster;
 }
+
+
+
