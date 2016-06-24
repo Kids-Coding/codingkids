@@ -30,7 +30,7 @@
         <div class="col-md-4">
             <img src="../img/marcus.png" height="300">
             <div class="names">Marcus Mondragon</div>
-            <div class="aboutfounders">dl;sahg;kdjsh;asdkgasdlkhf;asldk asd;kjahsd ;kasbd;gkjasdh;fkajshdf ;aksjdhg;kajsdf;ka jshdf;kasjdhf;k a;kjsdhg;akjsd hf;kajsdfkajds s;dkjf hgas;dkjghakdsghaskdjg a;skdjfh;skdjgh;aksdjhg;askdj ;aksdjhg;askdjhg;aksjdhg;askjd ;askdjgha;skdhg;k ajsdhg;ajk ;kfdjhg ;akjsdhf;aksjdf asdjfh;asdkhg;asdlkjgasdlk a;ksdjhg;kasdh;</div>
+            <div class="aboutfounders">Hey I'm Marcus. I like my fiancee and my dogs. I also like good pizza and basketball. Sometimes I take my dogs on walk, sometimes I play lots of video games.</div>
         </div>
     </div>
     <div class="center">
