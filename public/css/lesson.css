@@ -103,5 +103,7 @@ textarea {
     font-family: lobster;
 }
 
-
+.modal-footer{
+    padding-right: 50px;
+}
 

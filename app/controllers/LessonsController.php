@@ -16,4 +16,5 @@ class LessonsController extends BaseController {
         $allLessons = DB::table('lessons')->where('category', $lesson->category)->get();
         return View::make('lesson.show')->with('lesson', $lesson)->with('allLessons', $allLessons);
     }
+
 }

@@ -23,44 +23,125 @@
 
         <!-- quiz form -->
         <div class="col-sm-3 col-sm-offset-1">
+          <form>
 
-            <p>1. Which two "Magical Items" make up HTML?</p>
-            <form>
-              <input type="checkbox" name="html1" value="hyperText"> hyperText<br>
-              <input type="checkbox" name="html1" value="superText"> superText<br>
-              <input type="checkbox" name="html1" value="markUpLanguage"> markUp Language<br>
-              <input type="checkbox" name="html1" value="markDownLanguage"> markDown Language
-            </form> <!-- end form -->
+            <div class="form-group">
+          
+              <label>1. What does HTML stand for?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q1" id="q1a1" value="1">
+                  Hypertext Markup Language
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q1" id="q1a2" value="option2">
+                  Supertext Magic Language
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q1" id="q1a3" value="option3">
+                  Herotext Mayo Language
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q1" id="q1a4" value="option3">
+                  Hairytext Markdown Language
+                </label>
+              </div>
+              
+            </div>
 
             <br>
-            
-            <p>2. What version of the HTML Standard do we use in our lesson?</p>
-            <form>
-              <input type="radio" name="html1" value="v3"> Version 2<br>
-              <input type="radio" name="html1" value="v4"> Version 4<br>
-              <input type="radio" name="html1" value="v5"> Version 5<br>
-              <input type="radio" name="html1" value="v6"> Version 6
-            </form> <!-- end form -->
+            <div class="form-group">
+
+              <label>2. What version of the HTML Standard do we use in our lesson?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q2" id="q2a1" value="option1">
+                  Version 2
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q2" id="q2a2" value="option2">
+                  Version 4
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q2" id="q2a3" value="1">
+                  Version 5
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q2" id="q2a4" value="option3">
+                  Version 6
+                </label>
+              </div>
+
+            </div>
 
             <br>
+            <div class="form-group">
 
-            <p>3. What does HTML stand for?</p>
-            <form>
-              <input type="radio" name="html1" value="hyperText"> HyperText Markup Language<br>
-              <input type="radio" name="html1" value="superText"> SuperText Markup Language<br>
-              <input type="radio" name="html1" value="markUpLanguage"> HyperText Markdown Language<br>
-              <input type="radio" name="html1" value="markDownLanguage"> SuperText Markdown Language
-            </form> <!-- end form -->
+              <label>3. What does HTML stand for?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q3" id="q3a1" value="1">
+                  Hypertext Markup Language
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q3" id="q3a2" value="option2">
+                  Supertext Magic Language
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q3" id="q3a3" value="option3">
+                  Herotext Mayo Language
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q3" id="q3a4" value="option3">
+                  Hairytext Markdown Language
+                </label>
+              </div>
+
+            </div>
 
             <br><br>
 
             <!-- submit -->
             <input type="submit" value="Submit">
 
+          </form>
+ 
         </div> <!-- end col -->
 
     </div> <!-- end row -->
     
 </div> <!--end container -->
 
+
+<script>
+
+  $('input').on('click', function(){
+
+      if($("input:checked").val() == 1){
+        $( "input:checked" ).parent().css('color', 'green');
+      }else{
+        $( "input:checked" ).parent().css('color', 'red');
+        $( "input:checked" ).attr('disabled',true);
+      }
+
+  })
+</script>
                     

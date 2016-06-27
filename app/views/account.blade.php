@@ -8,18 +8,18 @@
 	<div class="col-md-6 col-md-offset-1 col-xs-8 col-xs-offset-1">
 		<h3 id="HTML_progress" class="progbar">HTML Progress</h3>
 		<div class="progress">
-			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%
+			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{ $htmlCompletePercent }}" aria-valuemin="0" aria-valuemax="{{ $htmlCompletePercent }}" style="width: {{ $htmlCompletePercent }}%;">{{ $htmlCompletePercent }}%
 				{{-- {{ count($htmlCompleteNumber) * 100 / $htmlLessons }} --}}
 			</div>
 		</div>
 		<h3 id="CSS_progress" class="progbar">CSS Progress</h3>
 		<div class="progress">
-			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="66.6" aria-valuemin="0" aria-valuemax="100" style="width: 66.6%;">66%</div>
+			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{ $cssCompletePercent }}" aria-valuemin="0" aria-valuemax="{{ $cssCompletePercent }}" style="width:  {{ $cssCompletePercent }}%;">{{ $cssCompletePercent }}%</div>
 		</div>
 		<div class="bottomprog">
 			<h3 id="PHP_progress" class="progbar">PHP Progress</h3>
 			<div class="progress">
-				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%;">33%</div>
+				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{ $phpCompletePercent }}" aria-valuemin="0" aria-valuemax="{{ $phpCompletePercent }}" style="width:  {{ $phpCompletePercent }}%">{{ $phpCompletePercent }}%</div>
 			</div>
 		</div>
 	</div>
