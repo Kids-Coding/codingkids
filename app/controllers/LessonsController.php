@@ -17,4 +17,9 @@ class LessonsController extends BaseController {
         return View::make('lesson.show')->with('lesson', $lesson)->with('allLessons', $allLessons);
     }
 
+    public function checkQuiz()
+    {
+        return 'hey you';
+    }
+
 }

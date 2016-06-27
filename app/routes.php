@@ -17,11 +17,6 @@ Route::get('/', 'HomeController@showIndex');
 
 Route::get('/about', 'HomeController@showAbout');
 
-//temp landing page
-// Route::get('/', 'HomeController@showTemp');
-//about page
-// Route::get('/about', 'HomeController@about');
-
 //login
 Route::get('/login', 'HomeController@loginForm');
 Route::post('/login', 'HomeController@doLogin');
@@ -38,6 +33,8 @@ Route::get('account', 'HomeController@account');
 
 //lessons controller
 Route::resource('lessons', 'LessonsController');
+
+Route::post('/lessons/{$id}', 'LessonController@checkQuiz');
 
 //test thing
 Route::get('orm-test', function ()
