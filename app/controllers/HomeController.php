@@ -76,11 +76,16 @@ class HomeController extends BaseController {
     public function account()
     {
     	if(Auth::check()){
+        	$cssLessons = Lesson::where('category', 'css')->lists('id');
     		$htmlLessons = Lesson::where('category', 'html')->lists('id');
+    		$phpLessons = Lesson::where('category', 'php')->lists('id');
     		$completedLessons = LessonUser::where('user_id', Auth::user()->id)->lists('lesson_id');
-    		$htmlCompleteNumber = array_intersect($htmlLessons, $completedLessons);
+    		
+    		$cssCompletePercent = count(array_intersect($cssLessons, $completedLessons)) * 25;
+    		$htmlCompletePercent = count(array_intersect($htmlLessons, $completedLessons)) * 25;
+    		$phpCompletePercent = count(array_intersect($phpLessons, $completedLessons)) * 25;
 
-        	return View::make('account')->with('htmlCompleteNumber', $htmlCompleteNumber)->with('htmlLessons', $htmlLessons);
+        	return View::make('account')->with('htmlCompletePercent', $htmlCompletePercent)->with('cssCompletePercent' , $cssCompletePercent)->with('phpCompletePercent' , $phpCompletePercent);
     	} else {
     		Session::flash('errorMessage', 'You must be logged in to view this page.');
     		return Redirect::intended('/login');
