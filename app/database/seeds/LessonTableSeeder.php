@@ -24,7 +24,7 @@ class LessonTableSeeder extends Seeder {
         $lesson = new Lesson();
         $lesson->name = 'Body Tags and More!!';
         $lesson->category = 'HTML';
-        $lesson->yt_id = '4ChUhNWug';
+        $lesson->yt_id = '--4ChUhNWug';
         $lesson->summary = 'quizzes.summary';
         $lesson->quiz = 'quizzes.quiz';
         $lesson->save();
