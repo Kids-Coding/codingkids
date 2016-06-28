@@ -119,14 +119,14 @@ class HomeController extends BaseController {
 			Session::flash('successMessage', 'Welcome ' . $user->childName . '! Your account has been successfully created.');
 			Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password')));
 			
-			Mail::send('emails.blank', array(
+			// Mail::send('emails.blank', array(
 
-                        'msg' => 'Hey!! Thanks for joining!!'
+   //                      'msg' => 'Hey!! Thanks for joining!!'
 
-                        ), function($message)
-                    {
-                        $message->to(Input::get('email'), 'Coding Kids')->subject('From Coding Kids!!');
-                    });
+   //                      ), function($message)
+   //                  {
+   //                      $message->to(Input::get('email'), 'Coding Kids')->subject('From Coding Kids!!');
+   //                  });
 
 			$userdata = array(
 				'username' => Input::get('username'),
