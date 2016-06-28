@@ -32,12 +32,19 @@ Route::post('/signup', 'HomeController@doSignup');
 Route::get('account', 'HomeController@account');
 
 //lessons controller
+
 Route::resource('lessons', 'LessonsController');
 
-Route::post('/lessons/{$id}', 'LessonController@checkQuiz');
 
 //test thing
-Route::get('orm-test', function ()
+Route::get('completeLesson/{id}', function ($id)
 {
-    // test code here
+    $lesson = Lesson::find($id);
+        $allLessons = DB::table('lessons')->where('category', $lesson->category)->get();
+        $finishedLesson = DB::table('lesson_user')->insert(
+            array('lesson_id' => $id, 'user_id' => Auth::id())
+        );
+
+        Session::flash('successMessage', 'Lesson Successfully Completed');
+        return View::make('lesson.show')->with('lesson', $lesson)->with('allLessons', $allLessons);
 });

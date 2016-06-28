@@ -23,8 +23,7 @@
 
         <!-- quiz form -->
         <div class="col-sm-3 col-sm-offset-1">
-          <form>
-
+          <form>            
             <div class="form-group">
           
               <label>1. What does HTML stand for?</label>
@@ -52,7 +51,6 @@
                   Hairytext Markdown Language
                 </label>
               </div>
-              
             </div>
 
             <br>
@@ -120,9 +118,9 @@
             <br><br>
 
             <!-- submit -->
-            <input type="submit" value="Submit">
 
           </form>
+            <button id="submitBtn"> submit </button>
  
         </div> <!-- end col -->
 
@@ -133,15 +131,21 @@
 
 <script>
 
-  $('input').on('click', function(){
+//   $('input').on('click', function(){
 
-      if($("input:checked").val() == 1){
-        $( "input:checked" ).parent().css('color', 'green');
-      }else{
-        $( "input:checked" ).parent().css('color', 'red');
-        $( "input:checked" ).attr('disabled',true);
-      }
+//       if($("input:checked").val() == 1){
+//         $( "input:checked" ).parent().css('color', 'green');
+//       }
 
+//   }) 
+$('#submitBtn').on('click', function(){
+  $('#quiz').toggle();
+  $.ajax({
+    url: "/completeLesson/" + {{ $lesson->id }},
   })
-</script>
+  .done(function( msg ) {
+    location.reload();
+  });
+});
+ </script>
                     
