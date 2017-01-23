@@ -3,9 +3,9 @@
 @section('content')
 {{-- <div id="fakeloader"></div>  --}}
 
-<div class="vide"
+<!-- <div class="vide"
   	data-vide-bg="../video/codingkids.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
-</div>
+</div> -->
 <!-- <div>
 	<video>
 		<source src="../video/codingkids.mp4" type="Intro Vid">
