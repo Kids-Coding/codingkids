@@ -6,7 +6,7 @@
 <!-- <div class="vide"
   	data-vide-bg="../video/codingkids.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
 </div> -->
-<div class="img-responsive"><img src="../img/boojee.png"></div>
+<div class="jrod"><img src="../img/boojee.png"></div>
 <!-- <div class="vide">
 	<video controls autoplay>
 		<source src="../video/codingkids.mp4" type="">
