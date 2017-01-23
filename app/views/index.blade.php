@@ -7,7 +7,7 @@
   	data-vide-bg="../video/codingkids.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
 </div> -->
 <div>
-	<video class="vide">
+	<video controls autoplay class="vide">
 		<source src="../video/codingkids.mp4" type="Intro Vid">
 		<source src="../video/codingkids.ogg" type="Intro Vid">
 	</video>
