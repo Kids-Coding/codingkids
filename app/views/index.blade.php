@@ -4,7 +4,7 @@
 <!-- <div id="fakeloader"></div> -->
 
 <!-- not working -->
-<div class="vide">
+<div class="jrod">
   	<h1>THIS IS A PICTURE NOW</h1>
 </div>
 
