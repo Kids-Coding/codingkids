@@ -6,12 +6,12 @@
 <!-- <div class="vide"
   	data-vide-bg="../video/codingkids.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
 </div> -->
-<!-- <div>
+<div>
 	<video>
 		<source src="../video/codingkids.mp4" type="Intro Vid">
 		<source src="../video/codingkids.ogg" type="Intro Vid">
 	</video>
-</div> -->
+</div>
 
 <div class="row">
 	<div class="col-md-6 about">
