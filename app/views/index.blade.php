@@ -8,6 +8,8 @@
   	data-vide-bg="../video/codingkids.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
 </div>
 
+<!-- notes -->
+
 <div class="row">
 	<div class="col-md-6 about">
 		<p class="whyck">Why Coding Kids?</p>
