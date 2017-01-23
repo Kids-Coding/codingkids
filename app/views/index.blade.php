@@ -3,10 +3,14 @@
 @section('content')
 <!-- <div id="fakeloader"></div> -->
 
+<div class="jrod">
+	<img src="../img/boojee.png">
+</div>
+
+<!-- not working -->
 <!-- <div class="vide"
   	data-vide-bg="../video/codingkids.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
 </div> -->
-<div><img class="jrod" src="../img/boojee.png"></div>
 <!-- <div class="vide">
 	<video controls autoplay>
 		<source src="../video/codingkids.mp4" type="">
