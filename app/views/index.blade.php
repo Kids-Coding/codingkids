@@ -4,8 +4,8 @@
 <!-- <div id="fakeloader"></div> -->
 
 <!-- not working -->
-<div id="myblock" class="vide"
-  	data-vide-bg="../video/codingkids.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
+<div class="vide">
+  	<h1>THIS IS A PICTURE NOW</h1>
 </div>
 
 <!-- notes -->
@@ -56,22 +56,6 @@
 		</div>
 	</div>
 </div>
-
-<script type="text/javascript">
-	$('#myBlock').vide('"../video/codingkids.mp4");
-	$('#myBlock').vide("../video/codingkids.mp4", {
-	});
-	$('#myBlock').vide({
-	  mp4: ../video/codingkids.mp4,
-	  // webm: path/to/video2,
-	  ogv: ../video/codingkids.ogg,
-	  // poster: path/to/poster
-	}, {
-	
-	});
-	$('#myBlock').vide('extended path as a string', 'options as a string');
-</script>
-
 
 
 @stop
