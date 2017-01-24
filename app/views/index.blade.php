@@ -4,8 +4,11 @@
 <!-- <div id="fakeloader"></div> -->
 
 <!-- not working -->
-<div class="vide"
+<!-- <div class="vide"
   	data-vide-bg="../video/codingkids.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
+</div> -->
+<div>
+	<h2>hey</h2>
 </div>
 
 <!-- notes -->
